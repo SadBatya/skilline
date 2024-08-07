@@ -1,0 +1,207 @@
+.column {
+  // @include mediaMax($small-tablet-max-width) {
+  flex-direction: column;
+  // }
+}
+
+.popup-vacancy {
+  background-color: $color-white;
+  padding: rem(28) rem(30) 0;
+  display: flex;
+  flex-direction: column;
+  @include mediaMax($mobile-max-width) {
+    padding: rem(28) rem(20) rem(58);
+  }
+
+  &__inner {
+    padding: 0 rem(30) rem(58);
+    display: flex;
+    gap: rem(45);
+    @include mediaMax($small-tablet-max-width) {
+      flex-direction: column;
+    }
+  }
+}
+
+.vacancy {
+  width: 70%;
+  @include mediaMax($small-tablet-max-width) {
+    width: 100%;
+  }
+  & .tabs__item {
+    border-color: $border-light-color;
+    &:hover ._text {
+      color: $color-black;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: rem(1) solid $color-black;
+    border-top: none;
+    @include mediaMax($tablet-max-width) {
+      margin: 0 rem(-30);
+      border: none;
+    }
+    @include mediaMax($mobile-max-width) {
+      grid-template-columns: repeat(1, 1fr);
+      // margin: 0 rem(-20);
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: rem(430);
+    width: 100%;
+    height: 100%;
+    border-top: rem(1) solid $color-black;
+    transition: 0.3s;
+    &:nth-child(2n) {
+      border-left-width: 0;
+    }
+    &:nth-child(2n + 1) {
+      border-right: rem(1) solid $color-black;
+      @include mediaMax($tablet-max-width) {
+        border-right: 0;
+      }
+    }
+    @include mediaMax($small-tablet-max-width) {
+      max-width: 100%;
+    }
+    // @include mediaMax($mobile-max-width) {
+    //   max-width: 100%;
+    // }
+  }
+
+  &__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-white;
+    outline: rem(1) solid $color-black;
+    transition: 0.35s;
+    z-index: 10;
+  }
+
+  &__item:hover:after {
+    left: rem(-20);
+    top: rem(-20);
+    right: rem(-20);
+    bottom: rem(-20);
+    z-index: 11;
+  }
+  &__item:hover .vacancy__line {
+    width: rem(30);
+    height: rem(1);
+    border: rem(0.5) solid $color-black;
+    margin-right: rem(-8);
+    margin-left: rem(8);
+  }
+
+  &__link {
+    cursor: pointer;
+    padding: rem(50) rem(30);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include mediaMax($tablet-max-width) {
+      padding: rem(50) rem(20);
+    }
+
+    & p {
+      position: relative;
+      z-index: 12;
+      font-size: rem(48);
+      line-height: rem(56);
+      font-weight: $bold;
+      color: $color-black;
+      @include mediaMax($tablet-max-width) {
+        font-size: rem(40);
+        line-height: rem(48);
+      }
+      & span {
+        position: relative;
+        z-index: 12;
+        font-size: rem(32);
+        line-height: rem(40);
+        margin-left: rem(15);
+      }
+    }
+  }
+
+  &__wrap-price {
+    margin-top: auto;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 12;
+    font-size: rem(14);
+    line-height: rem(20);
+    margin-bottom: rem(7);
+    color: $color-black;
+  }
+
+  &__wrap-title {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(95) 0 rem(53);
+    @include mediaMax($tablet-max-width) {
+      padding-top: 0;
+    }
+    & p {
+      font-size: rem(20);
+      line-height: rem(28);
+      font-weight: $bold;
+      color: $color-black;
+    }
+    & svg {
+      width: rem(5);
+      height: rem(20);
+      margin-left: rem(5);
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.connection {
+  max-width: rem(210);
+  display: flex;
+  flex-direction: column;
+  gap: rem(18);
+
+  @include mediaMax($small-tablet-max-width) {
+    width: 50%;
+    // padding: 0 rem(30) rem(50);
+  }
+  @include mediaMax($tablet-max-width) {
+    width: 100%;
+  }
+  // @include mediaMax($mobile-max-width) {
+  //   padding: 0 rem(20) rem(50);
+  // }
+  p.connection__bold-text,
+  a.connection__bold-text {
+    font-size: rem(20);
+    line-height: rem(28);
+    color: $color-black;
+    font-weight: $bold;
+  }
+  & p {
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $color-black;
+  }
+}

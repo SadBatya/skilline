@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="24" height="24" fill="none" stroke="#55555c" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g  transform="translate(-477 -11887)">
+    <g  transform="translate(501 11911) rotate(-180)">
+      <g  transform="translate(0 0)" clip-path="url(#clip-path)">
+        <g  fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5">
+          <circle cx="12" cy="12" r="12" stroke="none"/>
+          <circle cx="12" cy="12" r="11.25" fill="none"/>
+        </g>
+        <g  transform="translate(10.317 7.2)">
+          <line  x2="0.89" transform="translate(3.91 4.8)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5" opacity="0"/>
+          <path  d="M0,9.6,4.8,4.8,0,0" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

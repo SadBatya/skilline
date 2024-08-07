@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g  transform="translate(-183 -11887)">
+    <g  transform="translate(183 11887)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="0.75" y="0.75" width="22.5" height="22.5" fill="none"/>
+    </g>
+    <line  x2="24" transform="translate(183 11890.2)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x2="8.801" transform="translate(195.8 11899)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x2="8.801" transform="translate(195.8 11902.2)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x2="19.201" transform="translate(185.399 11905.399)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect  width="6.4" height="6.4" transform="translate(186.2 11895.8)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

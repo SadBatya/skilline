@@ -1,0 +1,37 @@
+.our-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: rem(18);
+  }
+
+  &__address {
+    color: $color-gray;
+    font-size: rem(16);
+    line-height: rem(24);
+
+    margin: 0;
+    font-style: normal;
+
+  }
+
+  &__phone {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+    margin: 0;
+
+    color: $light-green;
+  }
+
+  &__mail {
+    color: $light-green;
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+  }
+}

@@ -1,0 +1,83 @@
+.brandbook {
+  background-color: $color-white;
+
+  &__wrap-title {
+    position: relative;
+    height: rem(450);
+    padding: rem(124) rem(130) 0;
+    background-color: $color-black;
+    @include mediaMax($small-tablet-max-width) {
+      padding: rem(260) rem(60) rem(200);
+    }
+    @include mediaMax($tablet-max-width) {
+      padding: 0;
+      height: rem(250);
+    }
+  }
+
+  &__title {
+    max-width: rem(750);
+
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+
+    font-size: rem(200);
+    margin-bottom: rem(-6);
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(148);
+    }
+
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(100);
+      left: rem(10);
+    }
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(60);
+      left: rem(18);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: rem(100);
+    padding: rem(87) rem(100) rem(143);
+    @include mediaMax($small-tablet-max-width) {
+      padding: rem(87) rem(50) rem(143);
+    }
+    @include mediaMax($tablet-max-width) {
+      padding: rem(40) 0 rem(72);
+    }
+  }
+
+  ._bold {
+    font-weight: $bold;
+  }
+
+  ._medium {
+    font-weight: $normal;
+  }
+
+  ._regular {
+    font-weight: $regular;
+  }
+
+  .text-color {
+    & p {
+      color: $color-black !important;
+    }
+  }
+
+  & ._medium-par{
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $color-white;
+  }
+
+  & ._small-par {
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $color-white;
+  }
+}

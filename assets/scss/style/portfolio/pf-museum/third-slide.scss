@@ -1,0 +1,123 @@
+.third-slide {
+  display: flex;
+
+  gap: rem(80);
+  padding: rem(75) rem(30) 0;
+  @include mediaMax($small-tablet-max-width) {
+    flex-direction: column;
+    gap: rem(50);
+  }
+
+  @include mediaMax($tablet-max-width) {
+    padding: rem(50) rem(20) 0;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: rem(90);
+    @include mediaMax($mobile-max-width) {
+      gap: rem(55);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  &__date {
+    font-size: rem(24);
+    line-height: rem(30);
+    font-family: "Apparel-Bold", sans-serif;
+    color: var(--color-white);
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+  }
+
+  &__line {
+    height: rem(1);
+    border-left: rem(160) solid #fff;
+  }
+
+  &__wrap-name {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+  &__name {
+    max-width: rem(615);
+    width: 100%;
+    font-size: rem(50);
+    line-height: rem(60);
+    letter-spacing: rem(5);
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-family: "Apparel-Bold", sans-serif;
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(24);
+      line-height: rem(30);
+    }
+  }
+
+  &__local {
+    display: flex;
+    flex-direction: column;
+    @include mediaMax($small-tablet-max-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: rem(20);
+    }
+    @include mediaMax($mobile-max-width) {
+      flex-direction: column;
+    }
+  }
+
+  &__wrap-img {
+    margin-bottom: rem(5);
+  }
+
+  &__text-memorial {
+    max-width: rem(307);
+    font-size: rem(14);
+    line-height: rem(20);
+    color: var(--light-gray);
+    margin-bottom: rem(23);
+    font-family: "GolosText", sans-serif;
+    @include mediaMax($tablet-max-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrap-build {
+    max-width: rem(305);
+    max-height: rem(170);
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__man {
+    max-width: rem(560);
+    max-height: rem(560);
+    @include mediaMax($small-tablet-max-width) {
+      margin: 0 auto rem(50);
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

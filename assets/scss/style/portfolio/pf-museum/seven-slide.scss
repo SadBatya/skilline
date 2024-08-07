@@ -1,0 +1,137 @@
+.seven-slide {
+  display: flex;
+  flex-direction: column;
+  padding: rem(75) 0 rem(75) rem(60);
+  background-color: #171717;
+  @include mediaMax($small-tablet-max-width) {
+    padding: 0;
+    margin-top: rem(-99);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(22);
+    margin-bottom: rem(23);
+    @include mediaMax($small-tablet-max-width) {
+      z-index: 1;
+      padding-left: rem(20);
+    }
+  }
+
+  &__title {
+    max-width: rem(470);
+    font-size: rem(24);
+    line-height: rem(30);
+    color: var(--color-white);
+    font-family: "Apparel-Bold", sans-serif;
+  }
+
+  &__link {
+    font-size: rem(16);
+    line-height: rem(24);
+    color: var(--light-gray);
+    font-family: "GolosText", sans-serif;
+    & a {
+      color: var(--light-gray);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__wrap-cards {
+    max-width: rem(1350);
+    overflow: scroll;
+    display: flex;
+    background-color: #e5e5e5;
+    padding: rem(40);
+    margin-bottom: rem(13);
+    gap: rem(60);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+  & ._top-bottom {
+    margin-top: auto;
+    margin-bottom: rem(20);
+  }
+
+  & ._bottom {
+    margin-top: auto;
+  }
+
+  & ._top {
+    margin-top: auto;
+  }
+
+  & ._one {
+    width: rem(270);
+    max-height: rem(210);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & ._two {
+    width: rem(190);
+    max-height: rem(180);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & ._three {
+    width: rem(270);
+    max-height: rem(180);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & ._four {
+    width: rem(180);
+    max-height: rem(270);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & ._five {
+    width: rem(180);
+    max-height: rem(190);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    font-size: rem(12);
+    line-height: rem(18);
+    color: var(--color-gray);
+    font-family: "GolosText", sans-serif;
+  }
+
+  &__author {
+    font-size: rem(12);
+    line-height: rem(18);
+    color: var(--light-gray);
+    font-family: "GolosText", sans-serif;
+    @include mediaMax($small-tablet-max-width) {
+      padding-left: rem(20);
+    }
+  }
+}

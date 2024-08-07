@@ -1,0 +1,39 @@
+.accompaniment {
+  padding: rem(166) rem(160) rem(172);
+  @include mediaMax($desktop-small-width) {
+    padding: rem(160) rem(80) rem(90);
+  }
+  @include mediaMax($tablet-max-width) {
+    padding: rem(80) rem(30);
+  }
+  @include mediaMax($mobile-max-width) {
+    padding: rem(26) rem(20) rem(52);
+  }
+
+  &__wrap-accompaniment {
+    padding: rem(50);
+    @include mediaMax($mobile-max-width) {
+      padding: 0;
+    }
+    & > p {
+      max-width: rem(815);
+      margin-top: 0;
+      position: relative;
+      font-size: rem(20);
+      line-height: rem(28);
+      font-weight: $bold;
+      color: $color-gray;
+      &:first-child {
+        margin-bottom: rem(40);
+      }
+      & > .icon-hand,
+      .icon-like {
+        display: inline-block;
+      }
+
+      & > .selected-text {
+        color: $color-white;
+      }
+    }
+  }
+}

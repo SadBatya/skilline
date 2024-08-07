@@ -1,0 +1,22 @@
+.twoImage_block {
+  display: flex;
+  max-width: 100%;
+  gap: 1rem;
+  margin: 2rem;
+  
+
+  @include mediaMax($tablet-max-width){
+    flex-direction: column;
+  }
+
+  
+}
+
+.twoImage_block img {
+  object-fit: cover;
+  width: 49%;
+  
+  @include mediaMax($tablet-max-width){
+    width: 100%;
+  }
+}

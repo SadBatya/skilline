@@ -1,0 +1,174 @@
+// TODO +++ название блока и файла не совпадают !
+.bonus {
+  max-width: rem(1440);
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(10);
+    @include mediaMax($mobile-max-width) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+      row-gap: rem(10);
+      margin: 0 rem(-20);
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    background-color: $gray-black;
+    min-height: rem(100);
+    padding: rem(30);
+    gap: rem(30);
+    @include mediaMax($tablet-max-width) {
+      padding: rem(30) rem(20);
+    }
+  }
+
+  // TODO +++ обобщить стили всех блоков сделать один класс
+  .block1 {
+    grid-area: 1 / 1 / 3 / 2;
+    @include mediaMax($small-tablet-max-width) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    @include mediaMax($mobile-max-width) {
+      padding: rem(20) 0 rem(30) rem(20);
+    }
+  }
+
+  .block2 {
+    grid-area: 1 / 2 / 2 / 3;
+    @include mediaMax($small-tablet-max-width) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    @include mediaMax($mobile-max-width) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+  }
+
+  .block3 {
+    grid-area: 2 / 2 / 3 / 3;
+    @include mediaMax($small-tablet-max-width) {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    @include mediaMax($mobile-max-width) {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+  }
+
+  &__title {
+    max-width: rem(760);
+    width: 100%;
+    font-size: rem(32);
+    line-height: rem(40);
+    padding: 0 0 rem(45) rem(235);
+    font-weight: $bold;
+
+    color: $color-white;
+    @include mediaMax($small-tablet-max-width) {
+      padding-left: 0;
+    }
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+      margin: 0;
+      padding: 0 0 rem(30) ;
+      width: 100%;
+    }
+  }
+  // TODO +++ что за стили ?
+  // &__block-discounts {
+  //   width: rem(451);
+  //   padding: rem(30) rem(50) rem(28) rem(30);
+
+  //   background-color: $gray-black;
+  // }
+
+  &__description {
+    font-size: rem(18);
+    line-height: rem(25);
+    margin: 0;
+
+    color: $color-white;
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(16);
+      line-height: rem(24);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: rem(30);
+    margin-top: auto;
+    @include mediaMax($mobile-max-width) {
+      display: flex;
+      overflow: auto;
+    }
+  }
+
+  &__wrapper-percent {
+    margin: 0;
+    @include mediaMax($mobile-max-width) {
+      margin-right: rem(20);
+    }
+  }
+
+  &__percent {
+    font-size: rem(48);
+    line-height: rem(56);
+    font-weight: $bold;
+    margin: 0;
+    padding-bottom: rem(7);
+
+    color: $color-white;
+  }
+
+  &__text-percent {
+    font-size: rem(16);
+    line-height: rem(24);
+
+    color: $color-light-gray;
+    @include mediaMax($mobile-max-width) {
+      max-width: rem(180);
+      width: 100%;
+    }
+  }
+  // TODO +++ обобщить в один блок с картинкой задать фиксированную высоту
+
+  &__inner-img {
+    max-width: rem(30);
+    max-height: rem(30);
+    width: 100%;
+    max-height: 100%;
+    @include mediaMax($small-tablet-max-width) {
+      max-width: rem(20);
+      height: 100%;
+      max-height: rem(20);
+      width: 100%;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__wrap-title {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    & p {
+      font-size: rem(20);
+      line-height: rem(30);
+      color: $color-white;
+      word-break: break-word;
+      @include mediaMax($small-tablet-max-width) {
+        font-size: rem(20);
+        line-height: rem(28);
+      }
+    }
+  }
+}

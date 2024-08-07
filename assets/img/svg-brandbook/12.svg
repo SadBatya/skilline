@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.774" height="24" viewBox="0 0 24.774 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="24.774" height="24" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g  transform="translate(-390 -11887)">
+    <g  transform="translate(390 11887)">
+      <g  clip-path="url(#clip-path)">
+        <path  d="M26.5,15.622l3.395-3.879V7.1L27.568,4H26.083" transform="translate(-5.89 -0.904)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path  d="M11.162,4H3.322L1,7.1v4.644L11.838,24.129h1.551l2.182-2.494" transform="translate(-0.226 -0.903)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <line  y2="1.548" transform="translate(405.484 11891.646)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g  transform="translate(390 11887)">
+      <g  clip-path="url(#clip-path)">
+        <line  y2="1.548" transform="translate(15.484)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x2="1.548" transform="translate(17.032 3.097)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x1="1.548" transform="translate(12.387 3.097)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  y2="1.548" transform="translate(17.808 19.364)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <line  y2="1.548" transform="translate(407.808 11901.719)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x2="1.548" transform="translate(409.356 11904.815)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x1="1.548" transform="translate(404.711 11904.815)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

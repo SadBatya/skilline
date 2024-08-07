@@ -1,0 +1,224 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: rem(100) 0 rem(50);
+  border-top: rem(1) solid $gray-black;
+  @include mediaMax($tablet-max-width) {
+    padding: rem(50) 0;
+  }
+  @include mediaMax($mobile-max-width) {
+    padding: 0 0 rem(30);
+    border-top: none;
+  }
+
+  &__inner-box {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: rem(98);
+    gap: rem(40);
+    @include mediaMax($desktop-small-width){
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    @include mediaMax($tablet-max-width) {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: rem(50);
+    }
+    @include mediaMax($mobile-max-width) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__nav-links {
+    width: 100%;
+    display: flex;
+    gap: rem(115);
+    justify-content: flex-start;
+    @include mediaMax($desktop-small-width) {
+      gap: rem(80);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      gap: rem(50);
+      flex-wrap: wrap;
+    }
+    @include mediaMax($mobile-max-width) {
+      // margin: 0 0 rem(25);
+      flex-wrap: wrap;
+    }
+  }
+  // TODO +++ я бы задал max-width
+  &__column {
+    // max-width: rem(260);
+    // width: 100%;
+    max-width: calc(25% - #{rem(50)});
+    min-width: rem(100); // 100px
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+    flex-shrink: 0;
+
+    @include mediaMax($desktop-small-width) {
+      max-width: calc(25% - #{rem(36)});
+    }
+    @include mediaMax($small-tablet-max-width) {
+      width: calc(50% - #{rem(50)});
+      max-width: none;
+      min-width: auto;
+      gap: rem(30);
+    }
+
+    @include mediaMax($mobile-max-width) {
+      width: 100%;
+
+      gap: rem(20);
+    }
+
+    &._clients {
+      margin-left: auto;
+
+      @include mediaMax($small-tablet-max-width) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // TODO +++ почистить комментарии
+  &__wrap-column {
+    display: flex;
+    margin-left: auto;
+    // justify-content: space-between;
+    gap: rem(40);
+
+    @include mediaMax($tablet-max-width) {
+      flex-direction: column;
+      gap: rem(30);
+    }
+  }
+  // TODO +++ убрать height 80% , сделать flex-grow: 1;
+  &__wrap {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //& .button-dark {
+    //  max-width: none;
+    //}
+    @include mediaMax($tablet-max-width) {
+      gap: rem(50);
+    }
+  }
+
+  &__title {
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: $bold;
+    text-transform: uppercase;
+
+    color: $color-white;
+  }
+
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    gap: rem(14);
+  }
+
+  &__item {
+    display: flex;
+  }
+
+
+  &__link {
+    display: flex;
+    font-size: rem(16);
+    line-height: rem(24);
+
+    color: $color-white;
+    &:hover {
+      color: $color-green;
+    }
+  }
+  // TODO +++ очистить от комментов лишних
+
+  & .pre-footer__signature {
+    @include mediaMax($mobile-max-width) {
+    flex-direction: column;
+    }
+  }
+
+  // & .pre-footer__wrap-signature {
+  //   @include mediaMax($mobile-max-width) {
+  //     flex-direction: column;
+  //     }
+  // }
+
+  &__bottom {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: rem(30);
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(30);
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      @include mediaMax($tablet-max-width) {
+        justify-content: flex-start;
+      }
+
+      & > *  {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  &__partners {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      display: flex;
+
+    }
+  }
+
+  &__gpt {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__created-by {
+    margin-right: rem(10);
+    line-height: 1;
+  }
+
+  &__gpt-logo {
+    img {
+      width: rem(24);
+      height: rem(24);
+      object-fit: contain;
+      object-position: bottom;
+    }
+
+    span {
+      line-height: 1;
+    }
+  }
+}

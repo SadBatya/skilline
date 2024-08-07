@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.909" height="24" viewBox="0 0 23.909 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="23.909" height="24" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g  clip-path="url(#clip-path)">
+    <g  transform="translate(0.751 0.8)">
+      <line  y2="5.973" transform="translate(17.924 3.057)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  y1="5.973" transform="translate(4.485 3.057)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <rect  width="2.433" height="3.244" transform="translate(3.035 0.001)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <rect  width="2.433" height="3.244" transform="translate(16.82)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <g  transform="translate(0 8.961)">
+        <path  d="M489.169,550.487H481.7l-.747-.747v-2.987l.747-.747h7.466l.747.747v2.987Z" transform="translate(-480.956 -546.007)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+        <path  d="M489.169,556.487H481.7l-.747-.747v-2.987l.747-.747h7.466l.747.747v2.987Z" transform="translate(-480.956 -547.527)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+        <path  d="M489.169,562.487H481.7l-.747-.747v-2.987l.747-.747h7.466l.747.747v2.987Z" transform="translate(-480.956 -549.047)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(13.447 8.961)">
+        <path d="M507.18,550.487h-7.466l-.747-.747v-2.987l.747-.747h7.466l.747.747v2.987Z" transform="translate(-498.967 -546.007)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+        <path  d="M507.18,556.487h-7.466l-.747-.747v-2.987l.747-.747h7.466l.747.747v2.987Z" transform="translate(-498.967 -547.527)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+        <path  d="M507.18,562.487h-7.466l-.747-.747v-2.987l.747-.747h7.466l.747.747v2.987Z" transform="translate(-498.967 -549.047)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+      <line  x2="1.622" transform="translate(7.9 1.623)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="0.811" transform="translate(11.144 1.623)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x1="1.622" transform="translate(13.576 1.623)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

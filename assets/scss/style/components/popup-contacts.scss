@@ -1,0 +1,273 @@
+.popup__contacts {
+  background-color: $color-white;
+  padding: rem(28) rem(30) rem(58);
+  display: flex;
+  flex-direction: column;
+  @include mediaMax($mobile-max-width) {
+    padding: rem(28) rem(20) rem(58);
+  }
+}
+
+.contact {
+  width: 40%;
+  @include mediaMax($tablet-max-width) {
+    width: 100%;
+  }
+
+  &__line  {
+    padding-top: rem(20);
+    border-top: rem(1) solid $border-light-color;
+}
+
+  &__address {
+    max-width: rem(330);
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $color-black;
+    font-style: normal;
+    margin-bottom: rem(40);
+  }
+
+  &__communication {
+    font-size: rem(32);
+    line-height: rem(40);
+    font-weight: $bold;
+    color: $color-black;
+    margin-bottom: rem(26);
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(27);
+      line-height: rem(34);
+    }
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+      margin-bottom: rem(18);
+    }
+    &:hover {
+      text-decoration: $light-green solid underline;
+    }
+  }
+
+  &__text {
+    margin-top: auto;
+    & p {
+      max-width: rem(327);
+      font-size: rem(14);
+      line-height: rem(20);
+      margin-bottom: rem(18);
+      &:last-child {
+        margin-bottom: 0;
+      }
+      & span {
+        font-weight: $bold;
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+.popup__form {
+  background-color: $border-light-color;
+  padding: rem(28) rem(30) rem(58) rem(80);
+  width: 100%;
+  @include mediaMax($small-tablet-max-width) {
+    padding: rem(28) rem(30) rem(58);
+  }
+  @include mediaMax($tablet-max-width) {
+    width: 100%;
+  }
+  @include mediaMax($mobile-max-width) {
+    padding: rem(28) rem(20) rem(58);
+  }
+}
+
+.form {
+  max-width: rem(750);
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $color-black;
+    text-transform: uppercase;
+    transition: 0.3s;
+    & span {
+      color: $color-red;
+    }
+    &:focus ~ .form__label,
+    &:not(:placeholder-shown) ~ .form__label {
+        top: rem(-22);
+        font-size: rem(14);
+        line-height: rem(21);
+
+        @include mediaMax($small-tablet-max-width){
+            top: rem(-18);
+        }
+    }
+
+  }
+
+  &__wrap {
+    display: flex;
+    gap: rem(46);
+    @include mediaMax($tablet-max-width) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__input {
+    z-index: -1;
+    width: 100%;
+    border: none;
+    border-bottom: rem(1) solid $light-gray;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    padding: rem(15) 0;
+    &:hover {
+      border-bottom: rem(1) solid $color-black;
+    }
+
+    &:-webkit-autofill {
+      -webkit-background-clip: text;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border-bottom: rem(1) solid $color-black;
+  }
+
+  .error {
+    border-bottom: rem(1) solid $color-red;
+
+  }
+  .error-text {
+    font-size: rem(12);
+    line-height: rem(20);
+    color: $color-red;
+    border-bottom: none;
+  }
+  &__group {
+    position: relative;
+    margin-bottom: rem(60);
+    width: 100%;
+  }
+
+  .form__input:focus ~ .form__label {
+    top: rem(-15);
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $color-gray;
+  }
+
+  &__textarea {
+    z-index: -1;
+    width: 100%;
+    min-height: rem(130);
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    transition: 0.3s;
+    border-bottom: rem(1) solid $light-gray;
+    padding: rem(30) 0 0;
+    &:hover {
+      border-bottom: rem(1) solid $color-black;
+    }
+    @include mediaMax($tablet-max-width) {
+      min-height: max-content;
+    }
+  }
+
+  .form__textarea:focus ~ .form__label {
+    top: rem(-15);
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $color-gray;
+  }
+
+  &__inner {
+    display: flex;
+    gap: rem(5);
+    align-items: center;
+    margin-bottom: rem(30);
+    position: relative;
+    @include mediaMax($mobile-max-width) {
+      align-items: flex-start;
+    }
+
+    & .error-text {
+      position: absolute;
+      top: calc(100% + 5px);
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    max-width: rem(16);
+    width: 100%;
+    height: rem(16);
+    border: rem(1.5) solid $color-gray;
+    &:hover {
+      border-color: $color-black;
+      background-color: $light-gray;
+    }
+    &:checked {
+      background-color: $color-black;
+      border-color: $color-black;
+    }
+  }
+
+  .form__checkbox::after {
+    display: none;
+    position: absolute;
+    width: rem(8);
+    height: rem(3);
+    content: "";
+    top: rem(3);
+    left: rem(1.5);
+    border-style: solid;
+    border: rem(2) solid $color-white;
+    border-right-width: 0;
+    border-top-width: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(-50deg);
+  }
+
+  .form__checkbox:checked::after {
+    display: block;
+  }
+
+  &__personal-data {
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $color-gray;
+    & a {
+      color: inherit;
+      text-decoration: $color-gray solid underline;
+    }
+  }
+
+  .hover-green {
+    &:hover {
+      color: $light-green;
+      stroke: $light-green;
+    }
+  }
+}

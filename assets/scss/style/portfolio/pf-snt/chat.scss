@@ -1,0 +1,436 @@
+.chat {
+  display: flex;
+  border-radius: rem(2);
+  background-color: #fff;
+  margin: 0 auto;
+  //width: 100%;
+
+
+  &__left {
+    border-right: rem(1) solid rgba(49, 154, 220, 0.2);
+    @include mediaMax($tablet-max-width) {
+      display: none;
+    }
+  }
+
+  &__left-top {
+    display: flex;
+    gap: rem(30);
+    padding: rem(12) rem(20) rem(10);
+    border-bottom: rem(1) solid rgba(49, 154, 220, 0.2);
+  }
+
+  &__search {
+    max-width: rem(168);
+    width: 100%;
+    border-radius: rem(16);
+    background-color: #f0f7fd;
+    padding: rem(8) rem(80) rem(7) rem(14);
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+    & span {
+      font-family: $fontFamily;
+      font-size: rem(14);
+      line-height: rem(20);
+      color: #9b9fa3;
+    }
+  }
+
+  &__left-center {
+    display: flex;
+    gap: rem(15);
+    padding: rem(30) rem(20) rem(5);
+    border-bottom: rem(1) solid rgba(49, 154, 220, 0.2);
+    & p {
+      text-transform: uppercase;
+      font-size: rem(12);
+      line-height: rem(22);
+      color: #9b9fa3;
+      font-weight: $semibold;
+      &:last-child {
+        color: #484d55;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: rem(80);
+          height: rem(3);
+          background: var(--main-bk-color);
+          margin: auto;
+          transform: perspective(rem(35)) rotateX(45deg);
+          border-radius: rem(2);
+          bottom: rem(-6);
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__left-bottom {
+    padding: rem(15) 0;
+  }
+
+  &__member {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    gap: rem(5);
+    align-items: center;
+    border: none;
+    background: transparent;
+    padding: rem(10) rem(17) rem(7);
+    &:hover {
+      background-color: #f0f7fd;
+      & .chat__avatar {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__member-right {
+    width: 100%;
+    display: flex;
+    gap: rem(5);
+    align-items: center;
+    border: none;
+    background: transparent;
+    padding: rem(10) rem(17) rem(15);
+  }
+
+  ._active-chat {
+    background-color: #319adc;
+    & p {
+      &:last-child {
+        color: #fff;
+      }
+    }
+    & .chat__user-name {
+      color: #fff;
+    }
+  }
+  ._online {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: rem(7);
+      height: rem(7);
+      background: #31dc45;
+      border-radius: 50%;
+      right: rem(-3);
+      height: rem(7);
+      top: 40%;
+    }
+  }
+  &__avatar {
+    width: rem(31);
+    height: rem(31);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f7fd;
+    border-radius: 50%;
+    font-size: rem(12);
+    line-height: rem(17);
+    font-weight: 500;
+    color: #484d55;
+    text-align: center;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    & .chat__user-name {
+      font-size: rem(12);
+      line-height: rem(16);
+      color: #484d55;
+      font-weight: $semibold;
+
+    }
+    & p {
+      font-size: rem(10);
+      line-height: rem(20);
+      font-weight: $regular;
+    }
+    & span {
+      font-size: rem(10);
+      line-height: rem(16);
+      font-weight: $regular;
+      color: #9b9fa3;
+    }
+  }
+
+  ._no-active {
+    & p {
+      color: #484d55;
+    }
+  }
+
+  &__btn-back {
+    display: none;
+    background: transparent;
+    border: none;
+    width: rem(30);
+    height: rem(30);
+    & svg {
+      width: 100%;
+      height: 100%;
+      stroke: #9b9fa3;
+      &:hover {
+        stroke: #319adc;
+      }
+    }
+    @include mediaMax($tablet-max-width) {
+      display: block;
+      cursor: pointer;
+    }
+    @include mediaMax($mobile-max-width){
+      margin-left: rem(-10);
+      margin-right: 0;
+    }
+  }
+
+  &__right {
+    width: 100%;
+  }
+
+  &__right-top {
+    padding: 0;
+    border-bottom: rem(1) solid rgba(49, 154, 220, 0.2);
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+  }
+
+  &__email {
+    max-height: rem(450);
+    padding: rem(20) rem(20) rem(55);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar{
+      width: rem(5);
+    }
+    &::-webkit-scrollbar-thumb{
+      background: #319ADC;
+      border-radius: rem(1);
+      border: rem(2) solid transparent;
+    }
+    &::-webkit-scrollbar-track{
+      background: transparent;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(5);
+  }
+
+  &__item-wrap {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  ._date {
+    display: flex;
+    font-size: rem(14);
+    line-height: rem(22);
+    font-weight: $normal;
+    color: #484d55;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__checkbox svg {
+    fill: #319adc;
+    width: rem(20);
+    height: rem(11);
+    @include mediaMax($mobile-max-width) {
+      width: rem(15);
+    }
+  }
+
+  ._unread {
+    fill: #9b9fa3;
+  }
+
+  &__wrap-time {
+    display: flex;
+    align-items: center;
+    gap: rem(9);
+  }
+
+  &__time {
+    font-size: rem(12);
+    line-height: rem(22);
+    color: #9b9fa3;
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(10);
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    margin-left: rem(45);
+  }
+
+  &__file {
+    display: flex;
+    flex-direction: column;
+    gap: rem(6);
+
+    & .chat__link {
+      display: flex;
+      gap: rem(10);
+      & .link {
+        font-size: rem(14);
+        line-height: rem(19);
+        color: #319adc;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__wrap-svg {
+    max-width: rem(13);
+    width: 100%;
+    max-height: rem(16);
+    height: 100%;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__file-img {
+    display: flex;
+    gap: rem(6);
+    & img {
+      max-width: rem(75);
+      max-height: rem(65);
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    max-width: rem(780);
+    width: 100%;
+    font-size: rem(14);
+    line-height: rem(18);
+    color: #484d55;
+    & .link {
+      cursor: pointer;
+
+      color: #319adc;
+    }
+  }
+
+  ._new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  ._new::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: rem(1);
+    background: #e9ecf0;
+    width: 100%;
+    top: 0;
+  }
+
+  ._new-message {
+    z-index: 1;
+    font-size: rem(12);
+    line-height: rem(22);
+    color: #9b9fa3;
+    padding: rem(3) rem(14);
+    border-radius: rem(50);
+    background-color: #e9ecf0;
+    width: max-content;
+    font-weight: $regular;
+    margin-top: rem(-15);
+  }
+
+  &__right-bottom {
+    // padding-top: rem(25);
+    padding-top: rem(5);
+  }
+
+  &__form {
+    align-items: center;
+    position: relative;
+    padding: rem(20);
+    display: flex;
+    justify-content: flex-start;
+    // gap: rem(20);
+    border-top: rem(1) solid rgba(49, 154, 220, 0.2);
+  }
+
+  &__input-file-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: rem(39);
+    height: rem(35);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: rem(20);
+  }
+
+  &__textarea {
+    border: none;
+    padding: rem(20) 0 0;
+    outline: none;
+    resize: none;
+    font-family: $fontFamily;
+    width: 100%;
+  }
+
+  &__form-btn {
+    margin-left: rem(20);
+    cursor: pointer;
+    padding: rem(7) rem(15) rem(9);
+    border: none;
+    border-radius: rem(2);
+    align-items: center;
+    background-color: #319adc;
+    display: flex;
+    gap: rem(3);
+    @include mediaMax($mobile-max-width){
+      padding: rem(5) rem(7) rem(5) rem(4)
+    }
+    &:hover {
+      background-color: #268ccc;
+    }
+    & span {
+      font-size: rem(14);
+      line-height: rem(19);
+      color: #fff;
+      @include mediaMax($mobile-max-width){
+        display: none;
+      }
+    }
+  }
+}

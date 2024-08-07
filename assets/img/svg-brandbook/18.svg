@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.5" height="24" viewBox="0 0 25.5 24">
+  <g  transform="translate(-654.25 -11887)">
+    <g  transform="translate(656.542 11887)">
+      <path  d="M631.876,740.66h3.049a1.912,1.912,0,0,1,1.834,1.982h0a1.912,1.912,0,0,1-1.834,1.982h-3.049v-7.909h3.049a1.913,1.913,0,0,1,1.834,1.982h0a1.913,1.913,0,0,1-1.834,1.982h-3.049" transform="translate(-615.817 -728.684)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <path  d="M611.8,744.538l3.267-7.933,3.2,8" transform="translate(-611.803 -728.658)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="3.2" transform="translate(1.667 13.445)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  y2="24" transform="translate(10.459)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </g>
+    <path  d="M609.876,750.678v4.8h24v-4.8" transform="translate(45.124 11154.721)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+    <path  d="M609.876,731.478v-4.8h24v4.8" transform="translate(45.124 11161.122)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+  </g>
+</svg>

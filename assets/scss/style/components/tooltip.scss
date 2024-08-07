@@ -1,0 +1,104 @@
+.tooltip {
+  position: relative;
+
+  .tooltip__body {
+    z-index: -1000;
+    opacity: 0;
+
+    width: rem(330);
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: rem(7);
+    background: $color-white;
+    padding: rem(15) rem(10);
+    padding-right: rem(38);
+    color: $color-black;
+
+
+    @include mediaMax($mobile-max-width) {
+      width: rem(200);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: rem(-20);
+      left: rem(-5);
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+    }
+    &::after {
+      content: "";
+      display: block;
+      background-image: $bg-triangle;
+      bottom: rem(-9);
+      position: absolute;
+      left: 0;
+      width: rem(10);
+      height: rem(10);
+      background-repeat: no-repeat;
+    }
+
+    &._bottom {
+      &::after {
+        top: rem(-9);
+        bottom: auto;
+        transform: rotate(270deg);
+      }
+
+      &::before {
+        bottom: auto;
+        top: rem(-20);
+      }
+
+      &.right {
+        &::after {
+          left: auto;
+          right: 0;
+        }
+        &::before {
+          left: auto;
+          right: rem(-5);
+        }
+      }
+    }
+
+    &._right {
+      &::after {
+        left: auto;
+        right: 0;
+        transform: rotate(90deg);
+
+      }
+
+      &::before {
+        left: auto;
+        right: rem(-5);
+      }
+
+      &._bottom {
+        &:after {
+          top: rem(-9);
+          bottom: auto;
+          transform: rotate(180deg);
+
+        }
+
+        &::before {
+          bottom: auto;
+          top: rem(-20);
+        }
+      }
+    }
+
+    &._show {
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+
+}

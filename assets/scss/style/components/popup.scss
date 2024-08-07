@@ -1,0 +1,450 @@
+.two-column {
+  display: flex;
+  @include mediaMax($tablet-max-width) {
+    flex-direction: column;
+  }
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+
+  width: rem(1300);
+  max-width: calc(100vw - #{rem(20)});
+  max-height: calc(100vh - #{rem(20)});
+
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+  background-color: $color-white;
+
+  transform: translate(-50%,-50%);
+
+
+  &__btn-close {
+    position: absolute;
+    top: rem(30);
+    right: rem(30);
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: rem(30);
+    height: rem(30);
+    border: none;
+    fill: $color-white;
+    stroke: $color-gray;
+    z-index: 10;
+
+    &:hover {
+      fill: $light-gray;
+      stroke: $color-black;
+    }
+
+    & svg {
+      width: rem(13);
+      height: rem(13);
+    }
+  }
+
+  &__main {
+    height: auto;
+    max-height: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow-y: auto;
+    position: relative;
+
+    @include scrollBar(transparent , $color-gray);
+
+    @include mediaMax($tablet-max-width) {
+
+
+      @include scrollBar(transparent , $color-gray, rem(4));
+    }
+  }
+
+
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(40);
+    font-weight: $bold;
+    color: $color-black;
+    margin-bottom: rem(58);
+    max-width: 100%;
+  }
+
+  &__sub-title {
+    margin-top: rem(-40);
+    margin-bottom: rem(38);
+    font-size: rem(22);
+    line-height: rem(26);
+    color: $color-black;
+  }
+
+  &__content {
+    padding: rem(30) rem(60) rem(30) rem(40);
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    @include scrollBar(transparent , $color-gray);
+    touch-action: auto;
+
+    @include mediaMax($tablet-max-width) {
+
+
+      @include scrollBar(transparent , $color-gray, rem(4));
+    }
+  }
+
+  &._medium {
+    width: calc(100% - #{rem(40)});
+    max-width: rem(860);
+  }
+
+
+  &._max-height {
+    min-height: calc(100vh - #{rem(20)});
+  }
+
+  &._feedback {
+    z-index: 102;
+  }
+
+
+  &._message {
+    z-index: 110;
+  }
+}
+
+.wrap-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.popup-small {
+  max-width: rem(450);
+  width: 100%;
+  background-color: $border-light-color;
+  padding: rem(30) rem(20);
+  margin: 0;
+
+  @include mediaMax($img-mobile-max-width) {
+    max-width: calc(100vw - #{rem(30)});
+  }
+
+  & .popup__main {
+    display: flex;
+    flex-direction: column;
+    gap: rem(14);
+    padding-right: rem(20);
+
+    & p {
+      font-size: rem(16);
+      line-height: rem(24);
+
+      color: $color-black;
+
+      &.popup-small__title {
+        font-size: rem(20);
+        line-height: rem(24);
+        font-weight: $bold;
+      }
+    }
+  }
+
+  .btn-small {
+    top: rem(10);
+    right: rem(10);
+    stroke: $color-gray;
+    &:hover {
+      stroke: $color-black;
+    }
+  }
+
+  & .popup__content {
+    padding: 0;
+  }
+}
+
+.form {
+  max-width: rem(750);
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $color-black;
+    text-transform: uppercase;
+    transition: 0.3s;
+    & span {
+      color: $color-red;
+    }
+
+    &.value {
+      top: rem(-15);
+      font-size: rem(12);
+      line-height: rem(18);
+      color: $color-gray;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    gap: rem(46);
+    @include mediaMax($tablet-max-width) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__input {
+    z-index: -1;
+    width: 100%;
+    border: none;
+    border-bottom: rem(1) solid $light-gray;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    padding: rem(15) 0;
+    &:hover {
+      border-bottom: rem(1) solid $color-black;
+    }
+
+    &._success {
+      border-bottom-color: $color-green;
+    }
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border-bottom: rem(1) solid $color-black;
+  }
+
+  .error {
+    border-bottom: rem(1) solid $color-red;
+
+  }
+  .error-text {
+    font-size: rem(12);
+    line-height: rem(20);
+    color: $color-red;
+    border-bottom: none;
+  }
+  &__group {
+    position: relative;
+    margin-bottom: rem(60);
+    width: 100%;
+  }
+
+  &__request-error {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: rem(15) rem(20);
+
+    background-color: rgba($color-red, 0.2);
+
+    & p {
+      margin: 0;
+
+      font-size: rem(14);
+      line-height: rem(18);
+      color: $color-red;
+    }
+  }
+
+  .form__input:focus ~ .form__label {
+    top: rem(-15);
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $color-gray;
+  }
+
+  &__textarea {
+    z-index: -1;
+    width: 100%;
+    min-height: rem(130);
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    transition: 0.3s;
+    border-bottom: rem(1) solid $light-gray;
+    padding: rem(15) 0 0;
+    &:hover {
+      border-bottom: rem(1) solid $color-black;
+    }
+    @include mediaMax($tablet-max-width) {
+      min-height: max-content;
+    }
+
+    &.error {
+      border-bottom: rem(1) solid $color-red;
+    }
+
+    &._success {
+      border-bottom-color: $color-green;
+    }
+  }
+
+  .form__textarea:focus ~ .form__label {
+    top: rem(-15);
+    font-size: rem(12);
+    line-height: rem(18);
+    color: $color-gray;
+  }
+
+  &__inner {
+    display: flex;
+    gap: rem(5);
+    align-items: center;
+    margin-bottom: rem(30);
+    @include mediaMax($mobile-max-width) {
+      align-items: flex-start;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    max-width: rem(16);
+    width: 100%;
+    height: rem(16);
+    border: rem(1.5) solid $color-gray;
+    &:hover {
+      border-color: $color-black;
+    }
+    &:checked {
+      background-color: $color-black;
+      border-color: $color-black;
+    }
+  }
+
+  .form__checkbox::after {
+    display: none;
+    position: absolute;
+    width: rem(8);
+    height: rem(3);
+    content: "";
+    top: rem(3);
+    left: rem(1.5);
+    border-style: solid;
+    border: rem(2) solid $color-white;
+    border-right-width: 0;
+    border-top-width: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(-50deg);
+  }
+
+  .form__checkbox:checked::after {
+    display: block;
+  }
+
+  &__personal-data {
+    font-size: rem(14);
+    line-height: rem(20);
+    color: $color-gray;
+    & a {
+      color: inherit;
+      text-decoration: $color-gray solid underline;
+    }
+  }
+
+  .hover-green {
+    &:hover {
+      color: $light-green;
+      stroke: $light-green;
+    }
+  }
+
+  & .form__group-file {
+    max-width: calc((100% - #{rem(46)}) / 2);
+    @include mediaMax($tablet-max-width) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__file {
+    position: relative;
+
+    cursor: pointer;
+
+    &-input {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      padding: rem(13) rem(15);
+      font-size: rem(16);
+      line-height: rem(20);
+      justify-content: center;
+
+      border: rem(1) solid $light-gray;
+
+      &._uploaded {
+        padding-right: rem(40);
+        justify-content: flex-start;
+      }
+    }
+
+    &-value {
+      display: block;
+      flex-shrink: 1;
+      font: inherit;
+      color: inherit;
+      text-align: center;
+      width: 100%;
+
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &-del {
+      @include button-reset();
+      position: absolute;
+      top: rem(13);
+      right: rem(15);
+      z-index: 4;
+
+      flex-shrink: 0;
+      width: rem(25);
+      height: rem(25);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+      svg {
+        width: rem(11);
+        height: rem(11);
+        stroke: $color-red;
+      }
+    }
+  }
+}

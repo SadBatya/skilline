@@ -1,0 +1,36 @@
+.museum-header {
+  padding: rem(150) rem(110) rem(160);
+  background-image: url("./img/portfolio/pf-museum/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mediaMax($small-tablet-max-width) {
+    padding: rem(80) 0 rem(50);
+  }
+
+  & .pf-header__title {
+    color: var(--main-color);
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(60);
+      line-height: rem(70);
+    }
+    @include mediaMax($mobile-max-width) {
+        font-size: rem(32);
+        line-height: rem(40);
+      }
+  }
+
+  & .pf-header__description {
+    color: var(--color-white);
+    @include mediaMax($small-tablet-max-width) {
+        font-size: rem(16);
+        line-height: rem(24);
+      }
+  }
+
+  &__subtext {
+    font-size: rem(12);
+    line-height: rem(18);
+    color: var(--color-gray);
+  }
+}

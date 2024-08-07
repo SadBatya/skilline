@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.95" height="25.5" viewBox="0 0 23.95 25.5">
+  <g  transform="translate(-547.25 -12014.25)">
+    <g  transform="translate(556.001 12026.988)">
+      <path  d="M243,357.334v6.4h1.6a1.6,1.6,0,0,0,1.6-1.6v-3.2a1.6,1.6,0,0,0-1.6-1.6Z" transform="translate(-237.401 -357.321)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path  d="M251,364.519v-6.8a.4.4,0,0,1,.4-.4h2.8" transform="translate(-239.001 -357.318)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x1="3.2" transform="translate(11.999 3.2)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path  d="M236,364.534v-7.2h1.6a1.6,1.6,0,0,1,1.6,1.6h0a1.6,1.6,0,0,1-1.6,1.6H236" transform="translate(-236.001 -357.321)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <path d="M245.2,363.133v3.2H226v-24h12.8l6.4,6.4v3.2" transform="translate(322.002 11672.667)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path  d="M242,342.333v6.4h6.4" transform="translate(318.802 11672.667)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.5" height="13.5" viewBox="0 0 13.5 13.5">
+  <g transform="translate(0.75 0.75)">
+    <g transform="translate(5.366 0.068)">
+      <path d="M629.828,72.172h4.331V76.5" transform="translate(-627.663 -72.172)" fill="none" stroke="inherit" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line x1="6.497" y2="6.497" fill="none" stroke="inherit" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <path d="M623,78.8V84H611V72h5.2" transform="translate(-611 -72)" fill="none" stroke="inherit" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

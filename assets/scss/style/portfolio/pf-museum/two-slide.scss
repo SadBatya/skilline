@@ -1,0 +1,97 @@
+.two-slide {
+  padding: rem(150) 0 rem(160);
+  background-image: url("./img/portfolio/pf-museum/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mediaMax($small-tablet-max-width) {
+    padding: 0 0 rem(50);
+  }
+
+  & .pf-container {
+    max-width: rem(670);
+    margin: 0 auto;
+    @include mediaMax($small-tablet-max-width) { 
+      max-width: 100%;
+    }
+  }
+
+  & .pf-header__about-project {
+    flex-direction: column;
+  }
+
+  & .pf-header__subtitle {
+    color: var(--color-white);
+  }
+
+  & .pf-header__description {
+    color: var(--color-white);
+  }
+
+  & .portfolio__project-link span {
+    color: var(--main-color);
+  }
+
+  & .portfolio__project-link svg {
+    stroke: var(--main-color);
+  }
+
+  & .pf-header__inner-scroll span {
+    color: var(--color-white);
+  }
+
+  & .pf-header__wrap-arrow svg {
+    stroke: #414141;
+  }
+
+  // & .pf-header__inner-scroll:hover > span {
+  //   color: var(--main-color);
+  // }
+
+  // & .pf-header__inner-scroll:hover .pf-header__long-arrow {
+  //   border-top: rem(1) solid var(--main-color);
+  // }
+
+  // & .pf-header__inner-scroll:hover .pf-header__wrap-arrow svg {
+  //   stroke: var(--main-color);
+  // }
+
+  & .pf-header__inner-scroll:hover span,
+  & .pf-header__inner-scroll:hover svg {
+    color: var(--main-color);
+    stroke: var(--main-color);
+  }
+
+  & .portfolio__project-link span {
+    color: var(--main-color);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .portfolio__project-link:hover {
+    span {
+      text-decoration: underline;
+      text-decoration-color: var(--main-color);
+    }
+  }
+
+  & .pf-header__inner-scroll:hover .pf-header__long-arrow {
+    background: var(--main-color);
+    width: rem(10);
+  }
+
+  & .pf-header__wrap-arrow {
+    align-items: center;
+  }
+
+  & .pf-header__tags-row {
+    max-width: 100%;
+  }
+
+  & .pf-header__tag {
+    background-color: var(--bg-tag);
+    color: var(--color-teg);
+  }
+}

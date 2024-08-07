@@ -1,0 +1,438 @@
+.inner-work {
+  padding: rem(40) 0 0;
+  background-color: $color-black;
+  @include mediaMax($tablet-max-width) {
+    padding: rem(30) 0;
+  }
+  @include mediaMax($mobile-max-width) {
+    padding: rem(50) 0 0;
+  }
+
+  &__description {
+    display: flex;
+    margin-bottom: rem(55);
+    justify-content: space-between;
+    gap: rem(65);
+    @include mediaMax($small-tablet-max-width) {
+      gap: rem(30);
+    }
+    @include mediaMax($tablet-max-width) {
+      flex-direction: column;
+    }
+
+    @include mediaMax($mobile-max-width) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__content-wrapper {
+    background-color: $color-white;
+    padding: rem(60) rem(30) rem(30);
+    border: rem(1) solid $color-black;
+    @include mediaMax($tablet-max-width) {
+      padding: rem(30) rem(20);
+    }
+  }
+
+  &__box-title {
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(40);
+    @include mediaMax($small-tablet-max-width) {
+      margin-right: rem(50);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      margin-right: rem(40);
+    }
+  }
+  &__title {
+    font-size: rem(60);
+    line-height: rem(60);
+    color: $color-black;
+    margin-bottom: rem(25);
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(32);
+      line-height: rem(40);
+    }
+    @include mediaMax($mobile-max-width) {
+    }
+  }
+
+  &__wrap-text {
+    max-width: rem(765);
+    & p {
+      margin: 0;
+      font-size: rem(20);
+      font-weight: $bold;
+      line-height: rem(28);
+      color: $color-black;
+      @include mediaMax($small-tablet-max-width) {
+        font-size: rem(24);
+        line-height: rem(30);
+      }
+      @include mediaMax($tablet-max-width) {
+        font-size: rem(24);
+        line-height: rem(30);
+      }
+      @include mediaMax($mobile-max-width) {
+        font-size: rem(20);
+        line-height: rem(28);
+      }
+    }
+  }
+
+  &__wrap-btn {
+    max-width: rem(215);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    // TODO +++ не нравиться что высота стоит у обертки , и 1 нет обрезки , 2 лучше вообще тогда кнопке задать max-height
+    justify-content: end;
+    & button {
+      max-height: rem(50);
+    }
+    @include mediaMax($tablet-max-width) {
+      justify-content: start;
+    }
+  }
+
+  & .tabs__item {
+    border-color: $border-light-color;
+    &:hover ._text {
+      color: $color-black;
+    }
+  }
+
+  &__box-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(rem(600), 1fr));
+    // TODO +++ ошибка в css "," не ставиться
+    gap: rem(30);
+    @include mediaMax($desktop-max-width){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  .portfolio-card {
+    cursor: pointer;
+    position: relative;
+    color: $color-white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: $color-white;
+    @include mediaMax($mobile-max-width) {
+      height: rem(300);
+    }
+    &__section-link {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: rem(12);
+      line-height: rem(18);
+      color: rgba(247, 248, 252, 0.8);
+      &:hover {
+        color: $color-white;
+        transition: 0.4s;
+      }
+    }
+
+    &__link {
+      position: relative;
+      display: block;
+      flex-direction: column;
+      height: 100%;
+      padding: rem(72) rem(20) rem(45);
+    }
+
+    &__section {
+      display: flex;
+      gap: rem(20);
+      position: absolute;
+      top: rem(28);
+      left: rem(20);
+      z-index: 1;
+      max-height: rem(16);
+      max-width: rem(240);
+    }
+
+    &__title {
+      font-size: rem(32);
+      font-weight: $bold;
+      line-height: rem(40);
+      margin-top: 0;
+      margin-bottom: rem(28);
+      color: $color-white;
+
+      @include mediaMax($mobile-max-width) {
+        font-size: rem(20);
+      }
+    }
+
+    &__description {
+      font-size: rem(16);
+      max-width: rem(355);
+      font-weight: $bold;
+      line-height: rem(24);
+      color: $color-white;
+      margin: 0 0 rem(130);
+      @include mediaMax($mobile-max-width) {
+        display: none;
+      }
+    }
+
+    &__wrap-block {
+      position: absolute;
+      bottom: rem(20);
+      left: rem(20);
+    }
+
+    &__icon-blocked {
+      cursor: pointer;
+      display: flex;
+      gap: rem(5);
+      align-items: baseline;
+    }
+
+    &__block-text {
+      font-size: rem(12);
+      line-height: rem(18);
+      font-weight: $bold;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+
+    &__tooltip {
+      width: rem(330);
+      max-width: max-content;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: rem(7);
+      bottom: rem(35);
+      left: rem(5);
+      background: $color-white;
+      padding: rem(15) rem(10);
+      padding-right: rem(38);
+      color: $color-black;
+      z-index: 1;
+      @include mediaMax($mobile-max-width) {
+        width: rem(200);
+      }
+    }
+
+    &__tooltip::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: rem(-20);
+      left: rem(-5);
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    &__tooltip::after {
+      content: "";
+      display: block;
+      background-image: $bg-triangle;
+      bottom: rem(-9);
+      position: absolute;
+      left: 0;
+      width: rem(10);
+      height: rem(10);
+      background-repeat: no-repeat;
+    }
+
+    &__tooltip-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: $color-light-gray;
+      stroke: $color-light-gray;
+      gap: rem(38);
+      & svg {
+        width: rem(7);
+        height: rem(9);
+      }
+      &:hover {
+        color: $color-black;
+        stroke: $color-black;
+      }
+    }
+
+    &__tooltip-text {
+      font-size: rem(14);
+      line-height: rem(20);
+      color: $color-black;
+    }
+
+    &__tooltip-description {
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+
+
+  }
+
+  .portfolio-card:hover {
+    fill: $light-green;
+  }
+
+  ._dark-text {
+    color: $dark-gray !important;
+  }
+
+  ._gray-text {
+    color: $color-metallic !important;
+  }
+
+  &__wrap-link {
+    display: flex;
+  }
+
+  &__bold-text {
+    font-weight: $bold;
+  }
+
+  &__pagination {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: rem(40) 0 rem(10);
+    justify-content: center;
+
+    & .btn-pagination {
+      margin: 0 auto;
+      padding-right: rem(23);
+      max-width: rem(180);
+      @include mediaMax($desktop-small-width) {
+        margin: 0;
+      }
+      @include mediaMax($tablet-max-width) {
+        display: none;
+      }
+      @include mediaMax($mobile-max-width) {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    @include mediaDistance($tablet-max-width, $desktop-small-width) {
+      justify-content: space-between;
+    }
+    & .pagination__pages {
+      position: absolute;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: rem(5);
+      @include mediaMax($desktop-small-width) {
+        position: static;
+      }
+      @include mediaMax($mobile-max-width) {
+        display: none;
+      }
+    }
+
+    & .pagination__list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style-type: none;
+      gap: rem(5);
+    }
+
+    & .pagination__item {
+      cursor: pointer;
+      padding: rem(13) rem(20);
+      font-size: rem(14);
+      line-height: rem(20);
+      color: $color-light-gray;
+      border: rem(1.5) solid transparent;
+      & .pagination__link {
+        color: $color-light-gray;
+      }
+      &:hover {
+        border-color: $color-light-gray;
+      }
+      &.no-hover {
+        border: rem(1.5) solid transparent;
+        &:hover {
+          border-color: transparent;
+        }
+      }
+    }
+    &__pagination-item:hover .pagination__link {
+      color: $color-black;
+    }
+
+    .pagelink-active {
+      border-color: $gray-black;
+      color: $color-black;
+    }
+
+    & .pagination__arrow {
+      padding: rem(17) rem(13);
+      background-color: $border-light-color;
+      & svg {
+        display: block;
+        stroke: $color-gray;
+        width: rem(7);
+        height: rem(11);
+      }
+      &:first-child {
+        transform: rotate(180deg);
+      }
+      &:hover {
+        background-color: $light-gray;
+        stroke: $color-black;
+      }
+    }
+
+    & .awards-tooltip {
+      position: absolute;
+      bottom: rem(20);
+      right: rem(20);
+      z-index: 1;
+      max-width: 50%;
+
+      display: flex;
+      justify-content: flex-end;
+      gap: rem(10);
+
+      &__element {
+        width: rem(45);
+        height: rem(45);
+
+        & img {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          max-height: 100%;
+
+          object-fit: contain;
+          object-position: center;
+        };
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+    }
+  }
+}

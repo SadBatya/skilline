@@ -1,0 +1,127 @@
+// TODO +++ почистить стили
+.our-advantages {
+  padding: 0 ;
+
+  &__wrap-title {
+    display: flex;
+    align-items: center;
+    gap: rem(22);
+
+    @include mediaMax($tablet-max-width) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: rem(20);
+    }
+    @include mediaMax($mobile-max-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding-left: rem(20);
+    }
+
+    &._no-title {
+      margin-bottom: rem(35);
+
+      padding-left: rem(235);
+
+      @include mediaMax($desktop-max-width) {
+        padding-left: rem(190);
+
+      }
+      @include mediaMax($desktop-small-width) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__title {
+    @include mediaMax($small-tablet-max-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: rem(48);
+    line-height: rem(56);
+    font-weight: $bold;
+
+    color: $color-white;
+    @include mediaMax($desktop-small-width) {
+      font-size: rem(39);
+      line-height: rem(38);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(29);
+      line-height: rem(40);
+    }
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(22);
+      line-height: rem(25);
+    }
+  }
+
+  &__wrapper-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(30);
+    @include mediaMax($desktop-small-width) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(20);
+    }
+    @include mediaMax($tablet-max-width) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: rem(1) solid $color-black;
+    padding: rem(30);
+
+    background-color: $gray-black;
+    @include mediaMax($mobile-max-width) {
+      padding: rem(30) rem(20);
+    }
+  }
+  // TODO +++ что за ститли?
+
+
+  // TODO +++ нет стилей для svg они могут быть разных размеров и по этому нужно сделать обертку и ограничить её по высоте и ширине !
+  &__wrap-img {
+    width: auto;
+    max-width: 100%;
+    height: rem(30);
+
+    & img {
+      max-width: 100%;
+      width: auto;
+      height: 100%;
+
+      object-fit: contain;
+      object-position: center left;
+    }
+  }
+
+  &__name-project {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+    height: rem(48);
+    color: $color-white;
+    margin: rem(30) 0 rem(8);
+    @include mediaMax($mobile-max-width) {
+    }
+  }
+
+  &__description {
+    font-size: rem(16);
+    line-height: rem(24);
+    margin: 0;
+
+    color: $color-light-gray;
+  }
+}

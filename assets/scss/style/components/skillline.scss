@@ -1,0 +1,87 @@
+.about-company-section {
+
+}
+.sl-company {
+  max-width: rem(912);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: rem(30);
+  flex-direction: column;
+  padding: rem(100) 0 rem(92);
+  @include mediaMax($small-tablet-max-width) {
+    // TODO +++ тут точно по бокам отступы нужны ? это не контейнера ? остальных медиа тоже косается
+    padding: 0 0 rem(92);
+  }
+  @include mediaMax($tablet-max-width) {
+    padding: 0 0 rem(50);
+  }
+  @include mediaMax($mobile-max-width) {
+    padding: rem(60) rem(20);
+    margin-bottom: rem(20);
+  }
+
+  &__wrap-logo {
+    width: 100%;
+    height: rem(40);
+
+    //  TODO +++ убери width rem(40) поставь 100%;
+  }
+
+  &__title {
+    .title {
+      font-size: rem(135);
+      line-height: rem(145);
+      @include mediaMax($small-tablet-max-width) {
+        font-size: rem(125);
+        line-height: rem(125);
+      }
+      @include mediaMax($tablet-max-width) {
+        font-size: rem(100);
+        line-height: rem(100);
+      }
+      @include mediaMax($mobile-max-width) {
+        font-size: rem(60);
+        line-height: rem(70);
+      }
+    }
+  }
+
+  &__logo {
+    //  TODO +++ width: auto; height: 100%; max-width: 100%; object-position: left center;
+    max-width: 100%;
+    object-position: left center;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__description {
+    font-size: rem(32);
+    line-height: rem(40);
+    font-weight: $bold;
+    margin: 0;
+
+    color: $color-white;
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+  }
+
+  ._text-green {
+    color: $light-green;
+  }
+
+  &__about-us {
+    margin: 0;
+    font-size: rem(20);
+    line-height: rem(28);
+    color: $color-light-gray;
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+      font-weight: $bold;
+    }
+  }
+}

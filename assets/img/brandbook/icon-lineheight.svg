@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.526" height="18.119" viewBox="0 0 16.526 18.119">
+  <g id="Компонент_173_2" data-name="Компонент 173 – 2" transform="translate(0.53 1.06)">
+    <line id="Линия_1436" data-name="Линия 1436" y2="14.933" transform="translate(2.775)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1437" data-name="Линия 1437" x1="8.22" transform="translate(7.775)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1438" data-name="Линия 1438" x1="8.22" transform="translate(7.775 4)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1439" data-name="Линия 1439" x1="8.22" transform="translate(7.775 8)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1440" data-name="Линия 1440" x1="8.22" transform="translate(7.775 12)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1441" data-name="Линия 1441" x1="8.22" transform="translate(7.775 16)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="Сгруппировать_53854" data-name="Сгруппировать 53854" transform="translate(0 2.766) rotate(-90)">
+      <line id="Линия_1079" data-name="Линия 1079" x2="0.512" transform="translate(2.252 2.765)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5" opacity="0"/>
+      <path id="Контур_37344" data-name="Контур 37344" d="M0,0,2.765,2.765,0,5.529" transform="translate(0)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="Сгруппировать_53855" data-name="Сгруппировать 53855" transform="translate(5.529 13.234) rotate(90)">
+      <line id="Линия_1079-2" data-name="Линия 1079" x2="0.512" transform="translate(2.252 2.764)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5" opacity="0"/>
+      <path id="Контур_37344-2" data-name="Контур 37344" d="M0,5.529,2.765,2.765,0,0" transform="translate(0)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

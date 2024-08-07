@@ -1,0 +1,179 @@
+.type-projects {
+  &__header-text {
+    display: flex;
+    align-items: center;
+    gap: rem(22);
+    position: relative;
+    z-index: 1;
+    @include mediaMax($small-tablet-max-width) {
+      flex-direction: column;
+      align-items: flex-start;
+      // padding-left: rem(20);
+      gap: rem(40);
+    }
+
+    @include mediaMax($mobile-max-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: rem(20);
+    }
+  }
+
+  &__title {
+    // TODO +++ убрать лишнее
+    margin: 0;
+    color: $color-white;
+
+    @include mediaMax($mobile-max-width) {
+      padding: 0;
+    }
+  }
+  &__subtitle {
+    font-size: rem(48);
+    line-height: rem(56);
+    font-weight: $bold;
+    color: $color-white;
+    max-width: rem(460);
+    // TODO +++ странные стили , я бы перенес это в __subtitle
+    display: flex;
+    flex-direction: column;
+
+    @include mediaMax($desktop-small-width) {
+      font-size: rem(35);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(28);
+      line-height: rem(22);
+    }
+    @include mediaMax($tablet-max-width) {
+      margin: 0;
+    }
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(16);
+    }
+  }
+  // TODO +++ что за стили ?
+
+  &__wrapper-cards {
+    // TODO +++ почистить комменты
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(30);
+    padding: rem(55) rem(30) rem(30);
+    border: rem(1) solid $color-white;
+    @include mediaMax($desktop-small-width) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: rem(40) rem(20) rem(20);
+      gap: 0;
+    }
+    @include mediaMax($tablet-max-width) {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0;
+      border-left: none;
+      border-right: none;
+      margin: 0 rem(-20);
+      gap: 0;
+    }
+  }
+
+  &__card-project {
+    position: relative;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: rem(1) solid $color-black;
+    padding: rem(30);
+
+    background-color: $color-black;
+    @include mediaMax($mobile-max-width) {
+      padding: rem(30) rem(20);
+    }
+  }
+
+  &__card-project[href]:hover .type-projects__description {
+    color: $color-white;
+  }
+
+  &__card-project[href]:hover .type-projects__number {
+    border-color: $dark-gray;
+    color: $dark-gray;
+  }
+
+  &__number {
+    color: $dark-black;
+    font-size: rem(14);
+    line-height: rem(20);
+    padding-bottom: rem(10);
+    border-bottom: rem(1) solid $dark-black;
+    margin-bottom: rem(30);
+  }
+
+  &__wrapper-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(28);
+    & svg {
+      stroke: $color-white;
+      margin-left: rem(15);
+    }
+  }
+
+  &__name-project {
+    font-size: rem(20);
+    line-height: rem(28);
+    margin: 0;
+
+    color: $color-white;
+  }
+
+  &__description {
+    font-size: rem(16);
+    line-height: rem(24);
+    margin: 0;
+
+    color: $color-white;
+
+    &._gray {
+      color: $color-light-gray;
+    }
+
+    & ._green {
+      color: $color-green;
+    }
+
+    & a {
+      text-decoration: underline;
+      color: $color-green;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__feedback {
+    padding: rem(30);
+    display: flex;
+    gap: rem(30);
+    flex-direction: column;
+    text-align: left;
+    background-color: $color-black;
+
+    @include mediaMax($mobile-max-width) {
+      padding: rem(30) rem(20) rem(35);
+    }
+  }
+
+  &__feedback-description {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+    margin: 0;
+
+    color: $color-light-gray;
+  }
+}

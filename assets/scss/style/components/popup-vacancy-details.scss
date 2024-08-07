@@ -1,0 +1,119 @@
+.vacancy-details {
+  padding: rem(30) rem(30) rem(30);
+  @include mediaMax($tablet-max-width) {
+    padding: 0 rem(20);
+  }
+
+  &__subtitle {
+    display: none;
+    @include mediaMax($tablet-max-width) {
+      display: block;
+      padding: rem(30) rem(20);
+      font-size: rem(20);
+      line-height: rem(28);
+      color: $color-black;
+      font-weight: $bold;
+    }
+  }
+
+  .another-title {
+    margin-bottom: rem(25);
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+  }
+
+  &__wrap-price {
+    margin-bottom: rem(47);
+    & span {
+      font-size: rem(14);
+      line-height: rem(20);
+      color: $color-black;
+      margin: 0;
+    }
+    & p {
+      font-size: rem(32);
+      line-height: rem(40);
+      font-weight: $bold;
+      color: $color-black;
+      & span {
+        font-size: rem(30);
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    margin-bottom: rem(50);
+    p {
+      font-size: rem(16);
+      line-height: rem(24);
+      font-weight: $bold;
+      color: $color-black;
+    }
+  }
+
+  .popup-btn {
+    max-width: 100%;
+    justify-content: center;
+
+  }
+}
+.popup__main .vacancy-details {
+  padding-bottom: rem(30);
+}
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  padding: rem(30);
+  padding-left: rem(50);
+  @include mediaMax($tablet-max-width) {
+    padding: rem(30) rem(30);
+  }
+
+  & ul  {
+    display: flex;
+    flex-direction: column;
+    gap: rem(9);
+    & li {
+      font-size: rem(16);
+      line-height: rem(24);
+      color: $color-black;
+      list-style-type: none;
+      &::before {
+        content: "— ";
+      }
+    }
+    & .li:first-child {
+      font-weight: $bold;
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  h4,
+  p {
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $color-black;
+  }
+
+  .mob-btn {
+    display: none;
+
+    @include mediaMax($tablet-max-width) {
+      display: flex;
+      justify-content: center;
+      padding: rem(20) 0;
+    }
+    & button {
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
+}

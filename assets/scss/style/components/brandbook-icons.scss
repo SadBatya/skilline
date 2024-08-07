@@ -1,0 +1,151 @@
+.icons {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: rem(85) rem(50) rem(100);
+    background-color: $color-black;
+    @include mediaMax($tablet-max-width) {
+      padding: rem(85) 0 rem(100);
+    }
+    @include mediaMax($mobile-max-width) {
+      padding: rem(46) rem(20) rem(50);
+    }
+  }
+
+  &__title{
+    text-align: center;
+    font-size: rem(340);
+    line-height: rem(340);
+    font-weight: $bold;
+    color: $dark-black;
+    letter-spacing: rem(110);
+    text-transform: uppercase;
+    @include mediaMax($desktop-max-width) {
+      font-size: rem(270);
+      line-height: rem(200);
+      letter-spacing: rem(100);
+    }
+    @include mediaMax($desktop-small-width) {
+      font-size: rem(286);
+      letter-spacing: rem(40);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      letter-spacing: rem(18);
+      font-size: rem(240);
+    }
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(150);
+      letter-spacing: rem(20);
+    }
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(95);
+      line-height: rem(95);
+      letter-spacing: rem(8);
+    }
+  }
+
+  &__inner-hand {
+    display: flex;
+    justify-content: center;
+    padding: rem(76) 0 rem(114);
+    @include mediaMax($tablet-max-width) {
+      padding: rem(42) 0 rem(50);
+    }
+  }
+
+  &__icon-hand {
+    width: rem(24);
+  }
+
+  &__wrap-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: rem(30);
+    @include mediaMax($mobile-max-width) {
+      gap: rem(20);
+    }
+  }
+
+  &__icon-row {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    flex-wrap: wrap;
+    @include mediaMax($mobile-max-width) {
+      justify-content: left;
+    }
+    & img {
+      height: rem(24);
+      width: auto;
+    }
+    .icon-whatsapp {
+      cursor: pointer;
+      width: rem(32);
+      height: rem(32);
+      fill: $color-gray;
+
+      &:hover {
+        fill: $whatsapp;
+
+      }
+    }
+    .icon-telegram {
+      cursor: pointer;
+      width: rem(32);
+      height: rem(32);
+      fill: $color-gray;
+
+      &:hover {
+        fill: $telegram;
+
+      }
+    }
+
+    .icon-vkontakte {
+      cursor: pointer;
+      width: rem(32);
+      height: rem(32);
+      fill: $color-gray;
+
+      &:hover {
+        fill: $vkontakte;
+
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    position: relative;
+
+    & img {
+      opacity: 0;
+    }
+
+    &._stop {
+      & img {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-image: url('/img/icon-gif.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &._stop::after {
+      background: none;
+    }
+  }
+}

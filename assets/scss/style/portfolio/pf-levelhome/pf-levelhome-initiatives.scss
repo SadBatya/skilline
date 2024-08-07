@@ -1,0 +1,97 @@
+.initiatives {
+  margin: 0 auto;
+  background-color: var(--bg-intesiev-component);
+  position: relative;
+  margin-top: 200px;
+  padding-bottom: 15rem;
+
+  @include mediaMax($tablet-max-width) {
+    padding-bottom: 10rem;
+    margin-top: 100px;
+  }
+
+  @include mediaMax($mobile-max-width) {
+    margin-top: 80px;
+  }
+}
+
+.initiatives_maket {
+  width: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  top: -200px;
+
+  @media (max-width:1280px){
+    top: -150px;
+  }
+
+  @include mediaMax($tablet-max-width) {
+    top: -100px;
+  }
+
+  @include mediaMax($mobile-max-width) {
+    top: -30px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51%;
+    height: 100%;
+    background-image: url('@/assets/img/works/levelhome/left-frame-ipad-img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1280px){
+      height: 120%;
+      width: 60%;
+    }
+
+    @include mediaMax($mobile-max-width) {
+      height: 120%;
+      width: 60%;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 51%;
+    height: 100%;
+    background-image: url('@/assets/img/works/levelhome/rigth-frame-ipad-img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    @media (max-width: 1280px){
+      height: 120%;
+      width: 60%;
+    }
+
+    @include mediaMax($mobile-max-width) {
+      height: 120%;
+      width: 60%;
+    }
+  }
+  img {
+    width: 100%;
+    padding: 1.5rem;
+
+    @media (max-width:1280px) {
+      padding: 0.8rem;
+    }
+    @include mediaMax($tablet-max-width) {
+      padding: 0.5rem;
+    }
+    @include mediaMax($mobile-max-width) {
+      padding: 0.3rem;
+    }
+  }
+}

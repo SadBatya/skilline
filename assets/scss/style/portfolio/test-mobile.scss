@@ -1,0 +1,114 @@
+.container-test {
+  min-height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: rem(50);
+  width: 100%;
+  padding: rem(100);
+  // margin: 0 auto;
+}
+
+.main-content {
+  max-width: calc(100% - 15%);
+  width: 80%;
+  height: 100%;
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: lighter;
+
+  & img {
+    width: rem(500);
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* ------------------------------ mobile styles ----------------------------- */
+.sidebar {
+  width: auto;
+  height: 100%;
+}
+
+.sidebar__mobile-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+
+  @include mediaDistance($mobile-max-width, $small-tablet-max-width) {
+    //min-width: rem(160);
+    //width: rem(160);
+  }
+
+  &._fixed {
+    position: fixed;
+    top: rem(120);
+  }
+}
+
+.mobile__show {
+  height: 100%;
+  width: rem(240);
+  max-height: rem(445);
+  border: rem(4) solid $gray-black;
+  border-radius: rem(30);
+  overflow: hidden;
+
+  @include mediaDistance($mobile-max-width, $small-tablet-max-width) {
+    min-width: rem(160);
+    width: rem(160);
+    min-height: rem(300);
+    border: rem(3) solid $gray-black;
+    border-radius: rem(18);
+  }
+
+  @include mediaMax($mobile-max-width) {
+    border: rem(3) solid $gray-black;
+  }
+}
+
+.mobile-display {
+  position: sticky;
+  top: rem(120);
+  min-width: rem(240);
+  width: rem(240);
+  height: rem(445);
+  border: rem(4) solid $gray-black;
+  border-radius: rem(30);
+  overflow: hidden;
+  scroll-margin-top: rem(20);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include mediaDistance($mobile-max-width, $small-tablet-max-width) {
+    min-width: rem(160);
+    width: rem(160);
+    height: rem(300);
+    border: rem(3) solid $gray-black;
+    border-radius: rem(20);
+  }
+
+  @include mediaMax($mobile-max-width) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    & img {
+      transform: none !important;
+    }
+  }
+
+  &__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    transition: all 0.2s cubic-bezier(.17,.67,.83,.67);
+  }
+}

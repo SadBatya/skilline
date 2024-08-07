@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.705" height="104.629" viewBox="0 0 104.705 104.629">
+  <g id="Group_53791" data-name="Group 53791" transform="translate(-613.191 -1820.994)">
+    <rect id="Rectangle_6202" data-name="Rectangle 6202" width="75" height="75" transform="translate(628 1836.813)" fill="#fff"/>
+    <rect id="Rectangle_6205" data-name="Rectangle 6205" width="104.703" height="104.629" transform="translate(613.191 1820.994)" fill="#efeff2"/>
+    <path id="Path_41883" data-name="Path 41883" d="M0,0H16.109" transform="translate(613.191 1869.813)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+    <path id="Path_41882" data-name="Path 41882" d="M0,0H16.109" transform="translate(613.191 1877.813)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+    <text id="_2х" data-name="2х" transform="translate(618 1875.313)" fill="#0e0e10" font-size="6" font-family="Helvetica"><tspan x="0" y="0">2х</tspan></text>
+    <path id="Path_41881" data-name="Path 41881" d="M0,0H16.051" transform="translate(701.846 1869.813)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+    <path id="Path_41880" data-name="Path 41880" d="M0,0H16.215" transform="translate(701.68 1877.813)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+    <text id="_2х-2" data-name="2х" transform="translate(706 1875.313)" fill="#0e0e10" font-size="6" font-family="Helvetica"><tspan x="0" y="0">2х</tspan></text>
+    <g id="Group_54186" data-name="Group 54186" transform="translate(-25.404 -9)">
+      <g id="Logo_SL_bez_fona_i_slogana" transform="translate(654.707 1846.102)">
+        <g id="Сгруппировать_53591" data-name="Сгруппировать 53591">
+          <rect id="Прямоугольник_6332" data-name="Прямоугольник 6332" width="8.054" height="40.23" transform="translate(16.126 16.092)" fill="#0e0e10"/>
+          <rect id="Прямоугольник_6333" data-name="Прямоугольник 6333" width="8.054" height="40.23" transform="translate(32.215 16.092)" fill="#0e0e10"/>
+          <rect id="Прямоугольник_6334" data-name="Прямоугольник 6334" width="8.054" height="40.23" transform="translate(48.304 16.092)" fill="#0e0e10"/>
+          <path id="Контур_38602" data-name="Контур 38602" d="M195.6,0H131.17V72.414h72.484V0Zm0,64.368H139.224V8.046H195.6Z" transform="translate(-131.17)" fill="#0e0e10"/>
+        </g>
+      </g>
+      <path id="Path_41876" data-name="Path 41876" d="M0,0H32.2" transform="translate(694.801 1829.995) rotate(90)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+      <path id="Path_41877" data-name="Path 41877" d="M0,0H32.17" transform="translate(694.754 1902.453) rotate(90)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+      <path id="Path_41878" data-name="Path 41878" d="M0,.045S24.117,0,32.2,0" transform="translate(687.145 1829.995) rotate(90)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+      <path id="Path_41879" data-name="Path 41879" d="M0,.045S24.1,0,32.17,0" transform="translate(687.15 1902.453) rotate(90)" fill="none" stroke="#33d35e" stroke-width="0.5"/>
+      <text id="_2х-3" data-name="2х" transform="translate(687.406 1928.813)" fill="#0e0e10" font-size="6" font-family="Helvetica"><tspan x="0" y="0">2х</tspan></text>
+      <text id="_2х-4" data-name="2х" transform="translate(687.551 1839.813)" fill="#0e0e10" font-size="6" font-family="Helvetica"><tspan x="0" y="0">2х</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1629 @@
+.main-banner-wrapper {
+  position: relative;
+  margin-top: rem(-50);
+
+  @include mediaMax($small-tablet-max-width) {
+    margin-top: rem(-25);
+  }
+}
+
+.main-banner {
+  position: relative !important;
+  padding: 0 rem(30);
+
+  &._is-loading {
+    min-height: rem(650);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: rem(30);
+      right: rem(30);
+      bottom: 0;
+
+      background-color: #1b1b1f;
+    }
+  }
+  @include mediaMax($tablet-max-width) {
+    padding: 0 rem(20);
+  }
+
+  &__swipper {
+    display: flex;
+    position: relative !important;
+  }
+
+  & .swiper-wrapper {
+    position: static !important;
+    width: auto;
+    background: radial-gradient(
+        circle at 1% 115%,
+        rgba(128, 128, 128, 0.2) 5%,
+        transparent 10%
+      ),
+      radial-gradient(
+        circle at 35% 15%,
+        rgba(85, 85, 92, 0.2) 5%,
+        transparent 10%
+      ),
+      radial-gradient(
+        circle at 70% 105%,
+        rgba(128, 128, 128, 0.2) 5%,
+        transparent 10%
+      );
+
+    @include mediaMax($small-tablet-max-width) {
+      background: radial-gradient(
+          circle at 1% 115%,
+          rgba(128, 128, 128, 0.2) 5%,
+          transparent 10%
+        ),
+        radial-gradient(
+          circle at 35% -8%,
+          rgba(85, 85, 92, 0.2) 5%,
+          transparent 10%
+        ),
+        radial-gradient(
+          circle at 70% 105%,
+          rgba(128, 128, 128, 0.2) 5%,
+          transparent 10%
+        );
+
+      background-color: $bk-dark-gray;
+    }
+
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+    background-color: #1b1b1f;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+          circle at 9% 140%,
+          rgba(#707070, 0.2) 5%,
+          transparent 10%
+        ),
+        radial-gradient(
+          circle at 41% -12%,
+          rgba(#343434, 0.6) 5%,
+          transparent 10%
+        ),
+        radial-gradient(
+          circle at 63% 117%,
+          rgba(#323238, 0.4) 5%,
+          transparent 10%
+        );
+
+      z-index: 1;
+    }
+  }
+
+  &__slide {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    padding: rem(20) 0;
+
+
+
+    @include flexbox(row, space-between, flex-start);
+    height: auto !important;
+
+    &._tree-slide {
+      overflow: hidden;
+      @include flexbox(row, center, flex-end);
+      padding-bottom: rem(165);
+
+      position: relative;
+      background: $color-black;
+      border: rem(1) solid rgba($color-white, 0.1);
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      @include flexbox(column-reverse, space-between, flex-start);
+      padding: 0;
+    }
+
+    & .main-banner__animation svg {
+      max-width: 100%;
+      width: 100%;
+      @include mediaMax($tablet-max-width) {
+        height: auto;
+      }
+    }
+  }
+
+  &__color-text {
+    font-family: $fontFamily;
+    font-size: rem(185);
+    line-height: rem(185);
+    font-weight: $bold;
+    color: rgba($light-green, 0.5);
+
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(150);
+      line-height: rem(150);
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(100);
+      line-height: rem(100);
+    }
+  }
+
+  &__info-slide {
+    width: 50%;
+    height: auto;
+    @include flexbox(column, flex-start, flex-start);
+    gap: rem(50);
+    padding: rem(50) rem(20) rem(120) rem(60);
+
+    @include mediaMax($small-tablet-max-width) {
+      height: 100%;
+      width: 100%;
+      padding: rem(30) rem(30) rem(130);
+      gap: rem(30);
+    }
+
+    @include mediaMax($tablet-max-width) {
+      height: auto;
+      padding-bottom: rem(30);
+    }
+
+    & p {
+      font-family: $fontFamily;
+      font-size: rem(46);
+      line-height: rem(53);
+      font-weight: $normal;
+      color: $color-white;
+      max-width: rem(740);
+
+      @include mediaMax($small-tablet-max-width) {
+        font-size: rem(30);
+        line-height: rem(35);
+      }
+
+      @include mediaMax($mobile-max-width) {
+        font-size: rem(20);
+        line-height: rem(25);
+      }
+    }
+  }
+
+  &__animation {
+    width: 50%;
+    height: 100%;
+    @include flexbox(row, space-between, flex-start);
+    gap: rem(15);
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      width: 100%;
+    }
+  }
+
+  &__left-block {
+    min-width: rem(160);
+    @include flexbox(column, center, center);
+  }
+
+  &__center-block {
+    @include flexbox(column, center, center);
+    gap: rem(55);
+    margin-top: auto;
+  }
+
+  &__inner {
+    width: 100%;
+    @include flexbox(row, flex-start, flex-start);
+    gap: rem(15);
+  }
+
+  &__right-block {
+    @include flexbox(column, flex-start, flex-start);
+    gap: rem(65);
+
+    & svg {
+      &:last-child {
+        margin-top: rem(100);
+      }
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    left: 33%;
+    bottom: rem(65);
+    background: rgba($color-white, 0.05);
+    filter: blur(rem(60));
+    border-radius: 50%;
+    border: 1px solid transparent;
+    width: 40%;
+    height: 75%;
+    transform: rotate(150deg);
+    z-index: 1;
+
+    @include mediaMax($small-tablet-max-width) {
+      width: 60%;
+      left: 25%;
+    }
+  }
+
+  &__wrap-animation {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    // @include flexbox(column, flex-start, flex-start);
+    gap: rem(60);
+  }
+
+  &__text-animation {
+    font-family: $fontFamily;
+    font-size: rem(180);
+    line-height: rem(180);
+    font-weight: $bold;
+    color: rgba($color-black, 0.5);
+    animation: main-banner__text-animation 6s ease-out infinite;
+
+    &._next-animation {
+      animation: _next-animation 6s ease-out infinite;
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(150);
+      line-height: rem(150);
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(100);
+      line-height: rem(100);
+    }
+  }
+
+  @keyframes main-banner__text-animation {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes _next-animation {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  &__btn-play {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    width: 40%;
+    height: 60%;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+
+    @include mediaMax($small-tablet-max-width) {
+      width: 100%;
+      height: auto;
+    }
+    .video-top__play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-flex;
+
+      background: $color-black;
+      border-radius: 50%;
+      overflow: hidden;
+
+      width: 4.4vw;
+      height: 4.4vw;
+
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      will-change: width, height;
+
+      transition: all 0.3s ease-out;
+      transform: translate(-50%, -50%);
+
+      @include mediaMax($tablet-max-width) {
+        width: 50px;
+        height: 50px;
+      }
+
+
+      & .video-top__play-text {
+        position: absolute;
+        top: 3.48vw;
+        left: 50%;
+        max-width: 4.514vw;
+
+        transform: translateX(-50%);
+
+        color: $bk-white;
+        font-size: 0.8333vw;
+        line-height: 1.1;
+        letter-spacing: 0;
+        text-align: center;
+        opacity: 0;
+
+        will-change: opacity;
+
+        text-transform: uppercase;
+        transition: all 0s ease-out;
+
+        @include mediaMax($tablet-max-width) {
+          top: 40px;
+          font-size: 12px;
+          max-width: 65px;
+        }
+
+      }
+
+      & svg {
+        position: absolute;
+        top: 1.53vw;
+        left: calc(50% + 2px);
+
+        transform: translateX(-50%);
+
+        width: 1.38vw;
+        height: 1.38vw;
+        fill: $bk-white;
+        stroke: $bk-white;
+
+        @include mediaMax($tablet-max-width) {
+          width: 20px;
+          height: 20px;
+          top: 15px;
+        }
+      }
+    }
+
+    & .video-top__play {
+      position: absolute;
+      top: 33%;
+      @include flexbox(row, center, center);
+
+      & svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: rem(2);
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover {
+      & .video-top__play {
+        transform: translate(-50%, -50%) scale(1.5);
+      }
+    }
+  }
+
+  &__wrap-btns {
+    position: absolute;
+    left: rem(90);
+    bottom: rem(60);
+    z-index: 100;
+    @include flexbox(row, flex-start, center);
+    gap: rem(20);
+
+
+    @include mediaMax($small-tablet-max-width) {
+      left: rem(60);
+    }
+
+    @include mediaMax($tablet-max-width) {
+      left: 45%;
+    }
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    position: relative;
+    top: auto;
+    left: auto;
+    flex-shrink: 0;
+    @include flexbox(row, center, center);
+    border: rem(1) solid rgba($color-white, 0.1);
+    transition: 0.5s ease all;
+    width: rem(48) !important;
+    height: rem(48) !important;
+    opacity: 1;
+    margin-top: 0 !important;
+
+    &.swiper-button-prev,
+    &.swiper-button-next {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      width: rem(48);
+      height: rem(48);
+    }
+
+    &::after {
+      color: $color-white;
+      --swiper-navigation-size: rem(24);
+      margin-right: rem(2);
+    }
+
+    &:hover:not(.swiper-button-disabled) {
+      border-color: $color-white;
+    }
+
+    &:focus:not(.swiper-button-disabled) {
+      background: $color-black;
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.8;
+    }
+
+    @include mediaMax($tablet-max-width) {
+      display: none !important;
+    }
+  }
+
+  &__btn-next::after {
+    margin-right: 0;
+    margin-left: rem(2);
+  }
+
+  &__swiper-pagination,
+  &__swiper-pagination.swiper-pagination {
+    position: relative;
+    @include flexbox(row, flex-start, center);
+    gap: rem(4);
+    align-self: center;
+    bottom: auto;
+    top: auto;
+  }
+
+  & .swiper-pagination-bullet {
+    width: rem(11);
+    height: rem(3);
+    background: rgba($color-white, 0.5);
+    transition: 0.3s ease all;
+    border-radius: 0;
+    cursor: pointer;
+
+    @include mediaMax($tablet-max-width) {
+      height: rem(11);
+      display: none;
+    }
+
+    &.swiper-pagination-bullet-active {
+      height: rem(11);
+      background: $color-white;
+      border-radius: 0;
+      transition: 0.3s ease all;
+    }
+  }
+
+  //2 slide animation
+
+  & .slide-animation {
+    & .main-banner__wrap-animation {
+      @include flexbox(column, flex-start, flex-start);
+    }
+
+    & .main-banner__animation svg {
+      opacity: 1;
+
+      & .first-img {
+        opacity: 0;
+        animation: firstImg 0.3s ease-out;
+        animation-iteration-count: infinity;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes firstImg {
+        to {
+          opacity: 1;
+        }
+      }
+
+      & .greenpoint {
+        opacity: 0;
+        animation: greenpoint 0.1s ease-out;
+        animation-iteration-count: infinity;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+
+        &.firstpoint {
+          animation-delay: 1.7s;
+        }
+
+        &.twopoint {
+          animation-delay: 1.8s;
+        }
+
+        &.threepoint {
+          animation-delay: 1.8s;
+        }
+
+        &.fourpoint {
+          animation-delay: 1.9s;
+        }
+
+        &.graypoint {
+          animation-delay: 2.1s;
+        }
+
+        &.graypoint-2 {
+          animation-delay: 3.8s;
+        }
+
+        &.graypoint-3 {
+          animation-delay: 4.2s;
+        }
+
+        &.fivepoint {
+          animation-delay: 2.7s;
+          animation-duration: 0.2s;
+        }
+
+        &.bluepoint {
+          animation-delay: 3.2s;
+        }
+
+        &.bluepoint-2 {
+          animation-delay: 3.8s;
+        }
+
+        &.bluepoint-3 {
+          animation-delay: 4.2s;
+        }
+
+        &.bluepoint-4 {
+          animation-delay: 4.7s;
+        }
+      }
+
+      @keyframes greenpoint {
+        to {
+          opacity: 1;
+        }
+      }
+
+      & .greenline {
+        stroke: $color-green;
+ 
+        stroke-dasharray: 320;
+
+        stroke-dashoffset: 320;
+
+        animation: dash 0.5s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        // will-change: stroke-dashoffset;
+        // shape-rendering: crispEdges;
+
+        @keyframes dash {
+          from {
+            opacity: 0;
+            stroke-dashoffset: 320;
+          }
+
+          to {
+            opacity: 1;
+            stroke-dashoffset: 0;
+          }
+        }
+
+        &.blueline {
+          stroke: #0fafea;
+          animation-delay: 3.3s;
+          stroke-dasharray: 360;
+          stroke-dashoffset: 360;
+          animation-name: blueline;
+          animation-duration: 0.3s;
+
+          @keyframes blueline {
+            from {
+              opacity: 0;
+              stroke-dashoffset: 360;
+            }
+
+            to {
+              opacity: 1;
+              stroke-dashoffset: 0;
+            }
+          }
+        }
+
+        &.blueline-2 {
+          stroke: #0fafea;
+          animation-delay: 3.9s;
+        }
+
+        &.grayline-2 {
+          stroke: #29292f;
+          animation-delay: 3.9s;
+        }
+
+        &.grayline-3 {
+          stroke: #29292f;
+          animation-delay: 4.3s;
+        }
+      }
+
+      & .blueline-3 {
+        stroke: #0fafea;
+        stroke-dasharray: 520;
+        stroke-dashoffset: 520;
+
+        animation: blueline-3 0.6s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 4.3s;
+
+        @keyframes blueline-3 {
+          from {
+            stroke-dashoffset: 520;
+          }
+
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+
+      & .blueline-4 {
+        stroke: #0fafea;
+        stroke-dasharray: 820;
+        stroke-dashoffset: 820;
+
+        animation: blueline-4 0.7s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 4.8s;
+
+        @keyframes blueline-4 {
+          from {
+            opacity: 0;
+            stroke-dashoffset: 820;
+          }
+
+          to {
+            opacity: 1;
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+
+      & .lastgreen {
+        stroke: $color-green;
+        stroke-dasharray: 820;
+        stroke-dashoffset: 820;
+
+        animation: lastgreen 0.6s ease-out;
+
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+
+        @keyframes lastgreen {
+          from {
+            stroke-dashoffset: 820;
+          }
+
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+
+      & .grayline {
+        stroke: $dark-black;
+        stroke-dasharray: 320;
+        stroke-dashoffset: 320;
+
+        animation: grayline 0.4s ease-out;
+
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 2.5s;
+      }
+
+      @keyframes grayline {
+        from {
+          stroke-dashoffset: 320;
+        }
+
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      & .greenarrow {
+        opacity: 0;
+        animation: greenarrow 0.2s ease-out;
+        animation-iteration-count: infinity;
+        animation-fill-mode: forwards;
+        animation-delay: 1.2s;
+
+        &.twoarrow {
+          animation-duration: 0.3s;
+          animation-delay: 2.5s;
+        }
+
+        &.grayarrow {
+          stroke: $dark-black;
+          animation-delay: 2.7s;
+        }
+
+        &.nextarrow {
+          animation-delay: 3s;
+          animation-duration: 0.3s;
+        }
+
+        &.bluearrow {
+          animation-delay: 3.5s;
+          animation-duration: 0.3s;
+        }
+
+        &.bluearrow-2 {
+          animation-delay: 4.5s;
+        }
+
+        &.bluearrow-3 {
+          animation-delay: 5.5s;
+        }
+
+        &.grayarrow-2 {
+          animation-delay: 4.1s;
+        }
+
+        &.grayarrow-3 {
+          animation-delay: 4.4s;
+        }
+      }
+
+      @keyframes greenarrow {
+        to {
+          opacity: 1;
+        }
+      }
+
+      & .blackimg {
+        opacity: 0;
+        animation: blackimg 0.5s ease-out;
+        animation-iteration-count: infinity;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        transform-origin: center;
+      }
+
+      @keyframes blackimg {
+        to {
+          opacity: 1;
+        }
+
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(0.96);
+        }
+      }
+
+      & ._greenhover {
+        width: rem(243);
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: rem(5);
+        fill: $color-green;
+   filter: blur(rem(12));
+
+ 
+
+        animation: greenhover 0.8s ease-out;
+        animation-fill-mode: forwards;
+        z-index: 1;
+        animation-delay: 1.7s;
+        will-change: transform;
+      }
+
+      @keyframes greenhover {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(200px);
+        }
+      }
+
+
+
+
+      & .smallarrow {
+        opacity: 0;
+        animation: smallarrow 1s ease-out;
+        animation-iteration-count: infinity;
+        animation-fill-mode: forwards;
+        animation-delay: 1.8s;
+
+        &.nextarrow {
+          animation-delay: 1.9s;
+        }
+      }
+
+      @keyframes smallarrow {
+        to {
+          opacity: 1;
+        }
+      }
+
+      & .project,
+      .sklad,
+      .suppliers,
+      .logistics,
+      .company {
+        opacity: 0;
+        animation: 0.3s project ease-out;
+        animation-iteration-count: infinity;
+        animation-fill-mode: forwards;
+        animation-delay: 1.9s;
+      }
+
+      @keyframes project {
+        to {
+          opacity: 1;
+        }
+      }
+
+      & .shortline {
+        stroke: $color-green;
+        stroke-dasharray: 360;
+        stroke-dashoffset: 360;
+
+        animation: shortline 0.3s ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 2.7s;
+
+        @keyframes shortline {
+          from {
+            stroke-dashoffset: 360;
+          }
+
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+
+      & .sklad {
+        animation-delay: 2.7s;
+      }
+
+      & .suppliers {
+        animation-delay: 3.1s;
+      }
+
+      & .logistics {
+        animation-delay: 4.3s;
+      }
+
+      & .company {
+        animation-delay: 4.7s;
+      }
+    }
+  }
+
+  & .whiteline {
+    stroke: $bg-slide;
+    stroke-dasharray: 5 5;
+    stroke-dashoffset: 100%;
+    animation-delay: 1s;
+  }
+}
+
+/* ------------------------ The second svg-animation ------------------------ */
+.slide-animation {
+  will-change: stroke-dashoffset;
+  & svg {
+    & .whiteline {
+      stroke: $bg-slide;
+      stroke-dasharray: 5 5;
+      stroke-dashoffset: 100%;
+      animation-delay: 1s;
+    }
+
+    .main-content-1 {
+      animation: content-1 0.5s linear 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes content-1 {
+      50% {
+        transform: scale(0.9) translate(2.5%, 6%);
+      }
+
+      0%,
+      100% {
+        transform: scale(1) translate(0, 0);
+      }
+    }
+
+    .arrow-1 {
+      & .arrow {
+        animation: opacity 0.3s linear 1 0.85s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        stroke-dasharray: 320;
+        stroke-dashoffset: -320;
+        animation: dashed 0.3s ease-in-out 1 0.75s;
+        animation-fill-mode: forwards;
+      }
+
+      & rect {
+        animation: opacity 0.3s linear 1 0.6s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    .main-content-2 {
+      animation: opacity 0.5s linear 1 1.6s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    /* ------------------------------ line frontend ----------------------------- */
+
+    .line-frontend {
+      & .line {
+        stroke-dasharray: 320;
+        stroke-dashoffset: -320;
+        animation: dashed 0.3s linear 1 1.7s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & rect {
+        animation: opacity 0.3s linear 1 1.8s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .arrow {
+        animation: opacity 0.3s linear 1 1.9s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    /* ------------------------------ line backend ------------------------------ */
+
+    .line-backend {
+      & .arrow {
+        animation: opacity 0.3s linear 1 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        stroke-dasharray: 320;
+        stroke-dashoffset: -320;
+        animation: dashed 0.3s linear 1 2.1s;
+        animation-fill-mode: forwards;
+      }
+
+      & rect {
+        animation: opacity 0.3s linear 1 2.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    /* ------------------------------- front part ------------------------------- */
+    .frontend-content {
+      animation: opacity-transform 0.5s linear 1 1.9s;
+      animation-fill-mode: forwards;
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+
+    .front-wrap {
+      animation: opacity 0.5s linear 1 2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .node-content {
+      animation: opacity 0.5s linear 1 2.1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .nuxt-content {
+      animation: opacity 0.5s linear 1 2.2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .front-strokes-1 {
+      animation: opacity 0.5s linear 1 2.3s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      & .stroke-item-1 {
+        animation: 1.2s linear 2.25s infinite greenColor;
+      }
+
+      & .stroke-item-2 {
+        animation: 1.2s linear 2.3s infinite greenColor;
+      }
+
+      & .stroke-item-3 {
+        animation: 1.2s linear 2.35s infinite greenColor;
+      }
+
+      & .stroke-item-4 {
+        animation: 1.2s linear 2.4s infinite greenColor;
+      }
+
+      & .stroke-item-5 {
+        animation: 1.2s linear 2.45s infinite greenColor;
+      }
+
+      & .stroke-item-6 {
+        animation: 1.2s linear 2.5s infinite greenColor;
+      }
+
+      & .stroke-item-7 {
+        animation: 1.2s linear 2.55s infinite greenColor;
+      }
+
+      & .stroke-item-8 {
+        animation: 1.2s linear 2.6s infinite greenColor;
+      }
+    }
+
+    .front-strokes-2 {
+      animation: opacity 0.5s linear 1 2.4s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      & .stroke-item-1 {
+        animation: greenColor 1.2s linear 3.05s infinite;
+      }
+
+      & .stroke-item-2 {
+        animation: greenColor 1.2s linear 3.1s infinite;
+      }
+
+      & .stroke-item-3 {
+        animation: greenColor 1.2s linear 3.15s infinite;
+      }
+
+      & .stroke-item-4 {
+        animation: greenColor 1.2s linear 3.2s infinite;
+      }
+
+      & .stroke-item-5 {
+        animation: greenColor 1.2s linear 3.25s infinite;
+      }
+
+      & .stroke-item-6 {
+        animation: greenColor 1.2s linear 3.3s infinite;
+      }
+
+      & .stroke-item-7 {
+        animation: greenColor 1.2s linear 3.35s infinite;
+      }
+
+      & .stroke-item-8 {
+        animation: greenColor 1.2s linear 3.4s infinite;
+      }
+    }
+
+    /* -------------------------------- back part ------------------------------- */
+    .backend-content {
+      animation: opacity-transform 0.5s linear 1 2.3s;
+      animation-fill-mode: forwards;
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+
+    .back-wrap {
+      animation: opacity 0.5s linear 1 2.4s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .redis-content {
+      animation: opacity 0.5s linear 1 2.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .laravel-content {
+      animation: opacity 0.5s linear 1 2.6s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .back-strokes-1 {
+      animation: opacity 0.5s linear 1 2.7s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      & .stroke-item-1 {
+        animation: greenColor 1.2s linear 2.65s infinite;
+      }
+
+      & .stroke-item-2 {
+        animation: greenColor 1.2s linear 2.7s infinite;
+      }
+
+      & .stroke-item-3 {
+        animation: greenColor 1.2s linear 2.75s infinite;
+      }
+
+      & .stroke-item-4 {
+        animation: greenColor 1.2s linear 2.8s infinite;
+      }
+
+      & .stroke-item-5 {
+        animation: greenColor 1.2s linear 2.85s infinite;
+      }
+
+      & .stroke-item-6 {
+        animation: greenColor 1.2s linear 2.9s infinite;
+      }
+
+      & .stroke-item-7 {
+        animation: greenColor 1.2s linear 2.95s infinite;
+      }
+
+      & .stroke-item-8 {
+        animation: greenColor 1.2s linear 3s infinite;
+      }
+    }
+
+    .back-strokes-2 {
+      animation: opacity 0.5s linear 1 2.8s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      & .stroke-item-1 {
+        animation: greenColor 1.2s linear 3.45s infinite;
+      }
+
+      & .stroke-item-2 {
+        animation: greenColor 1.2s linear 3.5s infinite;
+      }
+
+      & .stroke-item-3 {
+        animation: greenColor 1.2s linear 3.55s infinite;
+      }
+
+      & .stroke-item-4 {
+        animation: greenColor 1.2s linear 3.6s infinite;
+      }
+
+      & .stroke-item-5 {
+        animation: greenColor 1.2s linear 3.65s infinite;
+      }
+
+      & .stroke-item-6 {
+        animation: greenColor 1.2s linear 3.7s infinite;
+      }
+
+      & .stroke-item-7 {
+        animation: greenColor 1.2s linear 3.75s infinite;
+      }
+
+      & .stroke-item-8 {
+        animation: greenColor 1.2s linear 3.8s infinite;
+      }
+    }
+
+    & .to-api-first {
+      & .arrow {
+        animation: opacity 0.3s linear 1 3.1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        animation: dashed 0.3s linear 1 3s;
+        stroke-dasharray: 320;
+        stroke-dashoffset: -320;
+        animation-fill-mode: forwards;
+      }
+
+      & rect {
+        animation: opacity 0.3s linear 1 2.9s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    & .to-api-second {
+      & .arrow {
+        animation: opacity 0.3s linear 1 3.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        animation: dashed 0.3s linear 1 3.4s;
+        stroke-dasharray: 320;
+        stroke-dashoffset: -320;
+        animation-fill-mode: forwards;
+      }
+
+      & rect {
+        animation: opacity 0.3s linear 1 3.3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    .api-content {
+      opacity: 0;
+      animation: opacity 0.7s linear 1 3.6s, opacity-scale 0.5s linear 1 4.3s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
+    }
+
+    .api-page {
+      & .arrow {
+        animation: opacity 0.3s linear 1 4.6s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        stroke-dasharray: 510;
+        stroke-dashoffset: -510;
+        animation: dashed-reverse 0.3s linear 1 4.5s;
+        animation-fill-mode: forwards;
+      }
+
+      & .rect {
+        animation: opacity 0.3s linear 1 4.4s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    .front-page {
+      & .arrow {
+        animation: opacity 0.3s linear 1 5.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        stroke-dasharray: 320;
+        stroke-dashoffset: -320;
+        animation: dashed-reverse 0.4s linear 1 4.9s;
+        animation-fill-mode: forwards;
+      }
+
+      & rect {
+        animation: opacity 0.3s linear 1 4.9s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    & .api-page {
+      & .arrow {
+        animation: opacity 0.3s linear 1 4.6s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        stroke-dasharray: 510;
+        stroke-dashoffset: -510;
+        animation: dashed-reverse-510 0.3s linear 1 4.7s;
+        animation-fill-mode: forwards;
+      }
+
+      & .rect {
+        animation: opacity 0.3s linear 1 4.8s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    .arrow-mysql {
+      & .arrow {
+        animation: opacity 0.3s linear 1 4.9s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      & .line {
+        stroke-dasharray: 510;
+        stroke-dashoffset: -510;
+        animation: dashed-reverse 0.4s linear 1 4.8s;
+        animation-fill-mode: forwards;
+      }
+
+      & .rect {
+        animation: opacity 0.3s linear 1 4.7s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+    }
+
+    .mysql-content {
+      opacity: 0;
+      animation: opacity 0.7s linear 1 5s, opacity-mysql 0.5s linear 1 5.2s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
+    }
+
+    @keyframes opacity-mysql {
+      30% {
+        transform: scale(1);
+      }
+
+      65% {
+        transform: scale(0.9) translate(4%, 3%);
+      }
+
+      100% {
+        transform: scale(1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes opacity-scale {
+      30% {
+        transform: scale(1);
+      }
+
+      65% {
+        transform: scale(0.9) translate(1%, 3%);
+      }
+
+      100% {
+        transform: scale(1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes greenColor {
+      0% {
+        stroke: #0e0e10;
+      }
+      2% {
+        stroke: #33d35e;
+      }
+      4% {
+        stroke: #0e0e10;
+      }
+      100% {
+        stroke: #0e0e10;
+      }
+    }
+
+    @keyframes opacity {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes opacity-transform {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes dashed {
+      from {
+        stroke-dashoffset: 510;
+        opacity: 0;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+    }
+
+    @keyframes dashed-reverse {
+      from {
+        stroke-dashoffset: -320;
+        opacity: 0;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  @keyframes dashed-reverse-510 {
+    from {
+      stroke-dashoffset: -510;
+      opacity: 0;
+    }
+
+    to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+
+  &__container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+
+    & video {
+      //&::-webkit-media-controls {
+      //  display: none!important;
+      //}
+
+      /* Mozilla proposal (dash) */
+      &:full-screen {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* W3C proposal (no dash) */
+      &:fullscreen {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* currently working vendor prefixes */
+      &:-webkit-full-screen,
+      &:-moz-full-screen {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:-webkit-full-screen {
+        &::-internal-media-controls-overflow-menu-list,
+        &::-internal-media-controls-playback-speed-list,
+        &::-internal-media-controls-overflow-menu-list-item,
+        &::-internal-media-controls-overflow-menu-list-item,
+        &::-internal-media-controls-overflow-button {
+          display: none !important;
+        }
+
+        &::-webkit-media-controls-timeline,
+        &::-webkit-media-controls-current-time-display,
+        &::-webkit-media-controls-time-remaining-display,
+        &::-webkit-media-controls-volume-control-container {
+          display: none !important;
+          opacity: 0;
+        }
+      }
+
+      &::-internal-media-controls-overflow-menu-list,
+      &::-internal-media-controls-playback-speed-list,
+      &::-internal-media-controls-overflow-menu-list-item,
+      &::-internal-media-controls-overflow-menu-list-item,
+      &::-internal-media-controls-overflow-button {
+        display: none !important;
+        opacity: 0;
+      }
+
+      &::-webkit-media-controls-timeline,
+      &::-webkit-media-controls-current-time-display,
+      &::-webkit-media-controls-time-remaining-display,
+      &::-webkit-media-controls-volume-control-container {
+        display: none !important;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba($color-black, 0.8);
+  }
+
+  &__loader-block {
+    width: rem(50);
+    height: rem(50);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @keyframes animate-stroke {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      stroke: $color-white;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35;
+      stroke: $light-green;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124;
+      stroke: $color-green;
+    }
+  }
+
+  .loader-path {
+    animation: animate-stroke 1s ease-in-out infinite;
+  }
+}

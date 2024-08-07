@@ -1,0 +1,60 @@
+.portfolio-cart {
+  position: relative;
+  width: 100%;
+  height: rem(360);
+  padding-top: rem(29);
+  padding-left: rem(20);
+
+  border-radius: rem(10);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  &__label {
+    font-size: rem(14);
+    line-height: rem(20);
+    margin-bottom: rem(28);
+    color: $color-white;
+  }
+
+  &__title {
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: rem(40);
+    margin-bottom: rem(28);
+
+    color: $color-white;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: rem(350);
+    font-size: rem(16);
+    line-height: rem(24);
+
+    color: $color-white;
+  }
+
+  &__icon-blocked {
+    width: rem(30);
+    height: rem(30);
+    text-align: center;
+    position: absolute;
+    bottom: rem(10);
+    left: rem(10);
+  }
+
+  &__img {
+    width: rem(11);
+    height: rem(16);
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &:hover {
+    .portfolio-cart__title {
+      text-decoration: underline;
+      text-decoration-color: $color-green;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.001" viewBox="0 0 24 24.001">
+  <g  transform="translate(-236 -11911)">
+    <g  transform="translate(236 11913.58)" fill="none">
+      <path d="M0,0H24V21.42H0Z" stroke="none"/>
+      <path d="M 1.5 1.500001907348633 L 1.5 19.92048072814941 L 22.5 19.92048072814941 L 22.5 1.500001907348633 L 1.5 1.500001907348633 M 0 1.9073486328125e-06 L 24 1.9073486328125e-06 L 24 21.42048072814941 L 0 21.42048072814941 L 0 1.9073486328125e-06 Z" stroke="none" fill="#55555c"/>
+    </g>
+    <line  x2="24" transform="translate(236 11918.742)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    <line  y2="3.023" transform="translate(240.141 11911)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    <line  y2="3.023" transform="translate(245.227 11911)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    <line  y2="3.023" transform="translate(250.313 11911)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    <line  y2="3.023" transform="translate(255.398 11911)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    <g  transform="translate(239.563 11924.291)">
+      <line  x2="1.865" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(3.729)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(7.458)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(11.187)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(14.916)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(0 5.59)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(3.729 5.59)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(7.458 5.59)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(11.187 5.59)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line  x2="1.865" transform="translate(14.916 5.59)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

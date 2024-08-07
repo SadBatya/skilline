@@ -1,0 +1,15 @@
+<svg id="Сгруппировать_53814" data-name="Сгруппировать 53814" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_6475" data-name="Прямоугольник 6475" width="20" height="20" fill="none" stroke="#707070" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_53813" data-name="Сгруппировать 53813" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_53817" data-name="Сгруппировать 53817" transform="translate(0.218 0.55)">
+      <path id="Контур_39336" data-name="Контур 39336" d="M7.272,17.227,1.414,11.477,9.469,3.565l6.59,6.469-2.2.72Z" transform="translate(-0.514 -1.398)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Контур_39337" data-name="Контур 39337" d="M6.854,6.6c-.144-.184-.284-.377-.421-.577-1.438-2.111-1.88-4.3-.989-4.881s2.78.651,4.218,2.761a8,8,0,0,1,1.432,3.43" transform="translate(-1.897 -0.375)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <ellipse id="Эллипс_1564" data-name="Эллипс 1564" cx="0.612" cy="0.601" rx="0.612" ry="0.601" transform="translate(8.864 6.961)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Контур_39338" data-name="Контур 39338" d="M27.315,23.81a2.45,2.45,0,0,1-4.9,0c0-1.328,2.45-4.81,2.45-4.81S27.315,22.482,27.315,23.81Z" transform="translate(-8.651 -7.552)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

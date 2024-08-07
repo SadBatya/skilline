@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" width="154" height="30" viewBox="0 0 154 30">
+  <path d="M23.5,25.375v3.75H1V1H16l7.5,7.5v3.748" transform="translate(-0.063 -0.063)"
+        fill="none" stroke="#33d35e" stroke-miterlimit="10" stroke-width="2"/>
+  <path d="M17,1V8.5h7.5" transform="translate(-1.063 -0.063)" fill="none"
+        stroke="#33d35e" stroke-miterlimit="10" stroke-width="2"/>
+  <text transform="translate(6 23)" fill="#f7f8fc" font-size="12"
+        font-family="Helvetica-Bold, Helvetica" font-weight="700">ПОСМОТРЕТЬ ПИСЬМО</text>
+</svg>

@@ -1,0 +1,66 @@
+.detail-cooperation {
+    padding-top: rem(30);
+    padding-left: rem(46);
+    color: $color-gray;
+  
+    &__title {
+      font-size: rem(48);
+      line-height: rem(56);
+      font-weight: $bold;
+      color: $color-gray;
+      margin-bottom: rem(27);
+    }
+    &__wrap-blocks {
+      overflow: auto;
+      display: flex;
+    }
+  
+    &__info-box {
+      margin-right: rem(65);
+    }
+  
+    &__number {
+      font-size: rem(16);
+      line-height: rem(24);
+      font-weight: $bold;
+      opacity: 0.3;
+    }
+  
+    &__condition {
+      width: max-content;
+      height: rem(48);
+      margin: rem(14) 0 rem(18);
+      font-size: rem(20);
+      line-height: rem(28);
+      font-weight: $bold;
+    }
+  
+    &__circle {
+      background: $color-gray;
+      border-radius: 50%;
+      height: rem(15);
+      width: rem(15);
+    }
+  
+    &__description {
+      margin-top: rem(18);
+      min-width: rem(270);
+      font-size: rem(16);
+      line-height: rem(24);
+    }
+  
+    &__headlines {
+      display: flex;
+      width: max-content;
+      border-bottom: rem(1) dashed $color-gray;
+      position: relative;
+      margin-bottom: rem(26);
+      & > div {
+        margin-right: rem(65);
+      }
+    }
+  
+  }
+  
+  
+  

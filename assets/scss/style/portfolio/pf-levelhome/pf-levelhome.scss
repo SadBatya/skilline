@@ -1,0 +1,362 @@
+.pf-levelhome {
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+  & ._main-inner {
+    padding-top: rem(80);
+    padding-bottom: rem(100) !important;
+
+    @include mediaMax($tablet-max-width) {
+      padding: 0 rem(20) rem(100) !important;
+    }
+
+    @include mediaMax($mobile-max-width) {
+      padding: 0 0 0 !important;
+    }
+  }
+
+  .pf-herocraft__wrap-blur .portfolio__wrap-text-project {
+    margin-top: rem(140);
+    @include mediaMax($tablet-max-width) {
+      margin-top: 0;
+    }
+  }
+
+  & .pf-header {
+    position: relative;
+    background-color: var(--main-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & .pf-header__header {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__wrap-blur {
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__slide-title {
+    font-size: rem(32);
+    line-height: rem(40);
+    font-weight: $regular;
+    max-width: rem(912);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white-color);
+
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+  }
+
+  & .portfolio__inner {
+    width: 100%;
+    padding-bottom: 0;
+    flex-direction: column;
+
+    @include mediaMax($small-tablet-max-width) {
+      padding: rem(100) 0 0;
+    }
+
+    @include mediaMax($tablet-max-width) {
+      padding: rem(50) 0;
+    }
+  }
+
+  & .portfolio__wrap-img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  & .portfolio__subtitle,
+  .portfolio__title-page,
+  .portfolio__des-page,
+  .portfolio__description,
+  .pf-header__description,
+  .pf-header__subtitle {
+    color: var(--main-text);
+  }
+
+  & .pf-header__title {
+    color: var(--color-text);
+  }
+
+  & .pf-header__inner-scroll span {
+    color: var(--main-text);
+  }
+
+  & .pf-header__inner-scroll svg {
+    stroke: var(--color-arrow);
+
+    &:hover {
+      stroke: var(--main-bk-color);
+    }
+  }
+
+  & .pf-header__inner-scroll:hover span,
+  & .pf-header__inner-scroll:hover svg {
+    color: var(--color-text);
+    stroke: var(--color-text);
+  }
+
+  & .portfolio__project-link span {
+    color: var(--color-text);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .portfolio__project-link:hover {
+    span {
+      text-decoration: underline;
+      text-decoration-color: var(--color-text);
+    }
+  }
+
+  & .pf-header__inner-scroll:hover .pf-header__long-arrow {
+    background: var(--color-text);
+    width: rem(10);
+  }
+
+  & .portfolio__project-link span {
+    color: var(--color-text);
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--main-bk-color);
+    }
+  }
+
+  & .portfolio__project-link svg {
+    stroke: var(--color-text);
+  }
+
+  & .pf-header__tag {
+    background-color: var(--bk-teg);
+    color: var(--color-teg);
+  }
+
+  & .pf-header__tags {
+    @include mediaMax($tablet-max-width) {
+      flex-direction: column;
+    }
+  }
+
+  & .mobile-display {
+    border-color: var(--bk-teg);
+  }
+
+  & .total__project-time {
+    background-color: var(--bk-teg);
+
+    & p {
+      color: var(--teg);
+    }
+  }
+
+  & .total__figure {
+    color: var(--main-text);
+  }
+
+  & .total__number {
+    & p {
+      color: var(--main-text);
+    }
+  }
+
+  & ._color-number {
+    color: var(--svg-color);
+  }
+
+  & .total__tooltip svg {
+    fill: var(--main-text);
+    stroke: var(--main-text);
+
+    &:hover {
+      fill: var(--color-tooltip);
+      stroke: var(--color-tooltip);
+    }
+  }
+
+  & .total__item-wrap p {
+    color: var(--color-page);
+  }
+
+  & .pf-reviews__title {
+    color: var(--bk-teg);
+  }
+
+  & .pf-reviews__wrap-pf-reviews {
+    border-color: var(--bk-teg);
+  }
+
+  & .pf-reviews__name {
+    color: var(--review-author-name-color);
+  }
+
+  & .pf-reviews__icon {
+    stroke: var(--color-text);
+  }
+
+  & .pf-reviews__icon tspan {
+    stroke: var(--white-color);
+  }
+
+  & .pf-reviews__down-quote svg,
+  .pf-reviews__top-quote svg {
+    stroke: var(--svg-color);
+    fill: var(--svg-color);
+
+    @include mediaMax($tablet-max-width) {
+      width: rem(52);
+      height: rem(40);
+    }
+
+    @include mediaMax($mobile-max-width) {
+      width: rem(40);
+      height: rem(31);
+    }
+  }
+
+  &__cards {
+    position: relative;
+    width: 100%;
+    max-width: rem(400);
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+
+    @include mediaMax($tablet-max-width) {
+      margin: 0 auto;
+    }
+
+    & .first-card {
+      z-index: 0;
+    }
+
+    & .center-card {
+      position: absolute;
+      top: rem(44);
+      left: rem(15);
+      z-index: 1;
+    }
+
+    & .last-card {
+      position: absolute;
+      top: rem(88);
+      left: rem(30);
+      z-index: 2;
+    }
+  }
+
+  & .portfolio__wrap-block {
+    width: 100%;
+  }
+
+  &__bk-color {
+    position: relative;
+    z-index: 0 !important;
+
+    & > *:not(.portfolio__decoration-image) {
+      position: relative;
+      z-index: 1;
+    }
+
+    & .portfolio__decoration-image {
+      top: rem(-100);
+    }
+
+    & .portfolio__inner {
+      background-color: var(--main-box);
+    }
+
+    & .portfolio__wrap-block {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__blur-cards {
+    background-color: var(--bk-color);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & .portfolio__main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    @include mediaMax($desktop-max-width) {
+      padding-left: rem(0);
+    }
+
+    @include mediaMax($tablet-max-width) {
+      gap: rem(30);
+    }
+
+    @include mediaMax($mobile-max-width) {
+      flex-direction: column;
+    }
+  }
+
+  & .portfolio__box-title {
+    @include mediaMax($desktop-max-width) {
+      padding-left: rem(0);
+    }
+    @include mediaMax($tablet-max-width){
+      padding-top: rem(45);
+    }
+  }
+
+  &__wrap-cards-game {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__publisher {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(70);
+
+    & p {
+      max-width: 100%;
+      font-size: rem(14);
+      line-height: rem(17);
+    }
+  }
+
+  &__inner-img {
+    max-width: 100%;
+
+    @include mediaMax($mobile-max-width) {
+      max-width: rem(280);
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

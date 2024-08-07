@@ -1,0 +1,94 @@
+.tabs {
+  &__wrap-list {
+    width: 100%;
+
+    &._is-loading {
+      & ._count {
+        @include isLoading();
+        display: block;
+        height: rem(14);
+        width: rem(40);
+      }
+
+      & .tabs__item:not(._light-border) {
+        & ._text {
+          @include isLoading();
+          display: block;
+          height: rem(16);
+          width: rem(90);
+        }
+      }
+    }
+  }
+  &__list {
+    overflow: auto;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    @include scrollBar(transparent , transparent, rem(0), rem(0));
+  }
+
+  &__item {
+    cursor: pointer;
+    list-style-type: none;
+    color: $color-black;
+    border-left: rem(1) solid $gray-black;
+    &:first-child {
+      border-left: none;
+      margin-right: auto;
+      & .tabs__item-link {
+        font-family: $fontFamily;
+        padding: rem(15) rem(75) rem(15) 0;
+
+        @include mediaMax($tablet-max-width) {
+          padding-right: rem(30);
+        }
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+  }
+
+  &__item-link {
+    @include button-reset();
+    padding: rem(15) rem(75) rem(15) rem(30);
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    color: $color-light-gray;
+    cursor: pointer;
+
+    font-family: $fontFamily;
+
+    @include mediaMax($tablet-max-width) {
+      flex-direction: row;
+      padding-right: rem(30);
+    }
+
+    &._active {
+      cursor: default;
+    }
+
+    & ._text {
+      width: max-content;
+      color: inherit;
+      font-size: rem(16);
+      font-weight: $normal;
+      line-height: rem(24);
+      margin: 0;
+    }
+    & ._active-item {
+      color: $color-black;
+    }
+
+    & ._count {
+      color: $color-light-gray;
+      font-size: rem(14);
+      line-height: rem(20);
+      font-weight: $regular;
+    }
+  }
+}

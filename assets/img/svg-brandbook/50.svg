@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.267" height="25.5" viewBox="0 0 22.267 25.5">
+  <g  transform="translate(-359.305 -12014)">
+    <g  transform="translate(360.055 12014.75)">
+      <path d="M117.2,171.133v3.2H98v-24h12.8l6.4,6.4v3.2" transform="translate(-98 -150.333)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path  d="M114,150.333v6.4h6.4" transform="translate(-101.201 -150.333)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g  transform="translate(363.348 12025.052)">
+      <g  transform="translate(0 1.109)">
+        <path  d="M248,804.2v-7.746a.456.456,0,0,1,.456-.456h3.189" transform="translate(-248 -795.999)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path  d="M3.566,0H0" transform="translate(0 3.844)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(4.218 1.11)">
+        <line  y2="7.29" transform="translate(1.822)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x2="3.645" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x2="3.645" transform="translate(0 7.29)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <path  d="M258.314,795v8.4h3.645" transform="translate(-248.916 -794.999)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <g  transform="translate(14.265 1.11)">
+        <path  d="M267.645,803.29h-3.189a.456.456,0,0,1-.456-.456v-6.378a.456.456,0,0,1,.456-.456h3.189" transform="translate(-263.685 -796)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path  d="M3.566,0H0" transform="translate(0 3.845)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

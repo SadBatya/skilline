@@ -1,0 +1,64 @@
+.header-contacts {
+  //padding: 0 0 rem(30);
+  //
+  //@include mediaMax($mobile-max-width) {
+  //  padding: 0;
+  //}
+
+  @include mediaMax($tablet-max-width) {
+    margin-bottom: rem(20) !important;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(50);
+    @include mediaMax($tablet-max-width) {
+      padding: 0 0 rem(30);
+    }
+    @include mediaMax($mobile-max-width) {
+      display: none;
+    }
+  }
+
+  &__signature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(4);
+
+    & p {
+      font-size: rem(12);
+      font-weight: $normal;
+      line-height: rem(15);
+      margin: 0;
+
+      color: $color-gray;
+
+    }
+  }
+
+  &__connection {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+
+    font-size: rem(14);
+    line-height: rem(20);
+
+    color: $color-white;
+
+    & a {
+      font-size: rem(16);
+      line-height: rem(29);
+      color: $color-gray;
+
+      &:hover {
+        color: $light-green;
+      }
+
+    }
+  }
+
+}

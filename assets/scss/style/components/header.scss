@@ -1,0 +1,344 @@
+.header {
+  //  TODO  +++ зачем два position ? если нужен static то убери вообще позиционирование и всё что с ним связанно
+  position: sticky;
+  top: 0;
+  background: $color-black;
+  width: 100%;
+  z-index: 10;
+
+  &.open {
+    z-index: 100;
+  }
+
+  &__container {
+    position: relative;
+    @include mediaMax($mobile-max-width) {
+      padding: 0 rem(20);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: rem(30);
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(15) 0;
+    // @include mediaMax($tablet-max-width) {
+    //   padding: rem(15) 0;
+    // }
+    @include mediaMax($small-tablet-max-width) {
+      height: rem(80);
+    }
+    @include mediaMax($mobile-max-width) {
+      padding: rem(10) 0;
+      height: rem(65);
+    }
+  }
+
+  &__logo {
+    max-width: rem(180);
+    height: rem(35);
+    @include mediaMax($tablet-max-width) {
+      max-width: rem(130);
+      height: rem(30);
+    }
+    @include mediaMax($mobile-max-width) {
+      max-width: rem(100);
+      height: rem(25);
+    }
+    // TODO +++ добавить свойства object-fit и object-position
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: rem(30);
+    @include mediaMax($small-tablet-max-width) {
+      display: none;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    list-style-type: none;
+    &._popup-menu:hover .header__drop-down-list {
+      display: flex;
+    }
+  }
+
+  &__item-link {
+    font-family: "GothamPro", sans-serif;
+    align-items: center;
+    display: flex;
+    font-size: rem(16);
+    line-height: rem(29);
+    color: $color-white;
+    stroke: $color-white;
+    gap: rem(9);
+
+    &:hover {
+      color: $light-green;
+      stroke: $light-green;
+    }
+
+    &.nuxt-link-exact-active {
+      color: $light-green;
+      stroke: $light-green;
+    }
+
+    & svg {
+      stroke: inherit;
+      width: rem(8);
+      height: rem(4);
+    }
+
+    //TODO +++ не хватает для svg стилей, не вижу чтоб задавалось у него inherit svg {stroke : inherit}
+  }
+
+  &__drop-down-list {
+    // TODO +++ я бы добавил max-width на всякий случай, не хватает z-index  и позиционирование сверху и слева (не все браузеры корректно без этого работают)
+    display: none;
+    max-width: rem(140);
+    z-index: 10;
+    list-style: none;
+    // display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: rem(20);
+    left: rem(-15);
+    // width: 100%;
+    background-color: $color-black;
+    padding: rem(20) rem(15);
+    gap: rem(15);
+  }
+  // TODO +++ можно обнулить в списке и не трогать этот элемент вообще, а так я бы еще добавил display flex;
+
+  &__drop-down-link {
+    color: $color-white;
+    display: block;
+    text-align: left;
+    font-size: rem(16);
+    line-height: rem(24);
+    &:hover {
+      color: $light-green;
+    }
+  }
+
+  &__wrap-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(30);
+
+    @include mediaMax($desktop-small-width) {
+      gap: rem(10);
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      & .header__line-btn,
+      & .button-green._no-btn {
+        display: none;
+      }
+      & {
+        margin-left: auto;
+      }
+    }
+
+    @include mediaMax($mobile-menu-width) {
+      & .button-green {
+        display: none;
+      }
+    }
+  }
+
+  &__line-btn {
+    border-left: rem(1) solid $color-gray;
+    height: rem(16);
+  }
+
+  .personal-aria {
+    border: none;
+    height: rem(0.5);
+    padding-right: 0;
+    @include mediaMax($desktop-small-width) {
+      border: rem(1) solid $color-white;
+      margin-bottom: rem(15);
+    }
+  }
+
+  .burger {
+    display: none;
+    padding-left: rem(20);
+    &__item {
+      display: flex;
+      position: relative;
+      list-style-type: none;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      // margin: 0 0 rem(35);
+      gap: rem(25);
+    }
+    &__link {
+      // TODO +++ text-decoration - не обнулено и нет display (либо display flex добавлять li)
+      text-decoration: none;
+      color: $color-white;
+      font-size: rem(40);
+      font-weight: $bold;
+      line-height: rem(29);
+      &:hover {
+        color: $color-green;
+      }
+    }
+    &__btn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      & img {
+        width: rem(20);
+        height: rem(16);
+        object-fit: contain;
+      }
+      //   TODO +++ нет стилей для картинки , хотя бы в ширине и высоте ограничить
+    }
+    @include mediaMax($small-tablet-max-width) {
+      display: block;
+    }
+  }
+
+  .burger__content {
+    padding: rem(35) rem(30);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: calc(100vh - #{rem(80)});
+
+    overflow-y: auto;
+    display: none;
+    z-index: 101;
+    gap: rem(50);
+    background-color: $color-black;
+    // TODO +++ почистить коменты , и добавить класс для открытие этого контента
+    align-items: flex-start;
+    margin: 0;
+
+    @include mediaMax($small-tablet-max-width) {
+      gap: rem(35);
+
+      &.open-burger {
+        display: flex;
+      }
+    }
+
+    @include mediaMax($tablet-max-width) {
+      // flex-direction: column;
+      padding: rem(20);
+      gap: rem(30);
+    }
+
+    @include mediaMax($mobile-menu-width) {
+      padding: rem(20) rem(20) rem(30);
+      height: calc(100vh - #{rem(65)});
+      flex-direction: column;
+    }
+  }
+
+  .burger__footer {
+    display: flex;
+    flex-direction: column;
+    gap: rem(18);
+    & .burger__contact {
+      // TODO +++ Обязательно !important использовать ? очень плохая практика , лучше перебивать весом селекторов
+      font-size: rem(20);
+      line-height: rem(28);
+      font-weight: $bold;
+      margin: 0;
+    }
+  }
+
+  .burger__wrap-btn {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    @include mediaMax($tablet-max-width) {
+      & button.button-dark {
+        display: none;
+      }
+
+
+    }
+    @include mediaMax($mobile-menu-width) {
+      & button.button-dark {
+        display: flex;
+      }
+    }
+  }
+
+  .burger__wrap-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button-btn {
+    @include mediaMax($mobile-menu-width) {
+      margin-top: rem(20);
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .burger-links {
+    display: block;
+    margin-top: 0;
+  }
+
+  .burger__column {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+  }
+
+  & .burger__networks {
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .pre-footer__btn-net:hover .pre-footer__btn-whatsapp {
+    fill: $whatsapp;
+  }
+
+  & .pre-footer__btn-net:hover .pre-footer__btn-telegram {
+    fill: $telegram;
+  }
+
+  & .pre-footer__btn-net:hover .pre-footer__btn-vkontakte {
+    fill: $vkontakte;
+  }
+
+  & .pre-footer__signature,
+  .pre-footer__wrap-signature {
+    @include mediaMax($tablet-max-width) {
+      flex-wrap: wrap;
+    }
+    @include mediaMax($mobile-max-width) {
+      flex-direction: column;
+      padding-top: 0;
+    }
+  }
+}

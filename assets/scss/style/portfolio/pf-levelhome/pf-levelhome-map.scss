@@ -1,0 +1,32 @@
+.level_home-map {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--text-color-comment-review);
+  background-image: url('@/static/img/portfolio/pf-levelhome/map/levelhome-map-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5rem 0 5rem 5rem;
+  
+  img{
+    width: 50%;
+  }
+  
+  @include mediaMax($tablet-max-width){
+    flex-direction: column;
+    gap: rem(100);
+    padding: 2rem 0 5rem 0rem;
+    background-position:  25% 75%;
+    background-size: 100%;
+    
+    img{
+      width: 70%;
+    }
+  }
+
+  @include mediaMax($mobile-max-width){
+    max-width: 90%;
+    margin-top: 50px;
+  }
+}

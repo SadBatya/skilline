@@ -1,0 +1,66 @@
+.title {
+  font-size: rem(200);
+  font-weight: $bold;
+  color: $color-white;
+  margin-bottom: rem(-6);
+  @include mediaMax($small-tablet-max-width) {
+    font-size: rem(148);
+  }
+  @include mediaMax($tablet-max-width) {
+    font-size: rem(100);
+  }
+  @include mediaMax($mobile-max-width) {
+    font-size: rem(60);
+    margin-bottom: rem(-2);
+  }
+
+  @include safarifix() {
+    margin-bottom: rem(-40);
+    @include mediaMax($tablet-max-width) {
+      margin-bottom: rem(-22);
+    }
+
+    @include mediaMax($mobile-max-width) {
+      margin-bottom: rem(-14);
+
+    }
+  }
+}
+
+.big-title {
+  font-size: rem(340);
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $color-black;
+  margin-bottom: rem(-5);
+
+
+  @include mediaMax($desktop-small-width) {
+    font-size: rem(250);
+
+  }
+  @include mediaMax($small-tablet-max-width) {
+    font-size: rem(200);
+
+  }
+  @include mediaMax($tablet-max-width) {
+    font-size: rem(150);
+
+  }
+  @include mediaMax($mobile-max-width) {
+    font-size: rem(100);
+    margin-bottom: rem(-2);
+  }
+  //
+  @include safarifix() {
+    margin-bottom: rem(-66);
+    @include mediaMax($small-tablet-max-width) {
+      margin-bottom: rem(-40);
+    }
+    @include mediaMax($tablet-max-width) {
+      margin-bottom: rem(-22);
+    }
+  }
+  //
+  //}
+}

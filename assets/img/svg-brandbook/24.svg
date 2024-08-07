@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.909" height="24" viewBox="0 0 23.909 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="23.909" height="24" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g  clip-path="url(#clip-path)">
+    <g  transform="translate(0.602 0.8)">
+      <circle  cx="11.195" cy="11.195" r="11.195" transform="translate(0.005 0)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <circle  cx="5.999" cy="5.999" r="5.999" transform="matrix(0.546, -0.838, 0.838, 0.546, 2.898, 12.946)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <g  transform="translate(11.2 0)">
+        <line  y2="5.225" transform="translate(0)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+        <line y2="5.225" transform="translate(0 17.176)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(3.28 3.28)">
+        <line  x2="3.694" y2="3.694" fill="none" stroke="#55555c" stroke-width="1.5"/>
+        <line  x2="3.694" y2="3.694" transform="translate(12.145 12.145)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(0 11.2)">
+        <line  x2="5.225" transform="translate(0 0)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+        <line  x2="5.225" transform="translate(17.175)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(3.281 3.28)">
+        <line  y1="3.694" x2="3.694" transform="translate(0 12.145)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+        <line  y1="3.694" x2="3.694" transform="translate(12.145)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,218 @@
+.process-stack {
+  // padding-top: rem(100);
+
+ & ._white-hover:hover {
+    color: $color-white
+  }
+
+  & .first-item {
+    padding-left: 0;
+  }
+
+  &__inner-title {
+    max-width: rem(1300);
+    display: flex;
+    flex-direction: column;
+    gap: rem(60);
+    padding: 0 0 rem(60) rem(135);
+    @include mediaMax($small-tablet-max-width) {
+      padding-left: rem(30);
+    }
+    @include mediaMax($mobile-max-width) {
+      padding-left: rem(20);
+    }
+  }
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(40);
+    font-weight: $bold;
+    color: $color-white;
+    margin-bottom: rem(27);
+    background-color: $color-black;
+    margin: 0;
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+      margin-top: rem(30);
+    }
+  }
+
+  &__wrap-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(50);
+    @include mediaMax($mobile-max-width) {
+      overflow: auto;
+    }
+  }
+
+  &__wrap-box {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+  }
+
+  &__info-box {
+    background: transparent;
+    border: none;
+    text-align: left;
+    min-width: rem(300);
+  }
+
+  &__number {
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: 700;
+    opacity: 0.3;
+    margin-bottom: rem(14);
+    color: $color-gray;
+    margin-bottom: rem(14);
+  }
+
+  &__condition {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+    color: $color-gray;
+    display: block;
+    margin-bottom: rem(14);
+  }
+
+  &__circle {
+    background: $color-gray;
+    border-radius: 50%;
+    height: rem(15);
+    width: rem(15);
+  }
+
+  &__wrap-cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    width: auto;
+  }
+
+  &__cards-row {
+    display: flex;
+    width: 100%;
+    padding: 0 rem(40);
+
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+
+
+    //&._reverse {
+    //  justify-content: flex-end;
+    //
+    //  @include  mediaMax($small-tablet-max-width) {
+    //    justify-content: flex-start;
+    //
+    //  }
+    //}
+
+    @include  mediaMax($small-tablet-max-width) {
+      padding: 0 rem(20);
+    }
+
+    &:not(.swiper-container-initialized) .swiper-wrapper {
+      gap: rem(20);
+    }
+
+    &.swiper-container-initialized {
+      padding: 0 rem(40);
+      @include  mediaMax($small-tablet-max-width) {
+        padding: 0 rem(20);
+      }
+    }
+  }
+
+  &__card-row-wrapper {
+    display: flex;
+    gap: rem(20);
+    justify-content: flex-start;
+
+    will-change: transform;
+    transform: translateX(0);
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0, .79, .65, .99);
+
+    user-select: auto;
+
+
+
+    @include  mediaMax($small-tablet-max-width) {
+      overflow: auto;
+      width: 100%;
+
+      @include scrollBar(transparent, transparent, 0,0);
+    }
+
+  }
+
+
+  &__card-technology,
+  &__card-technology.swiper-slide {
+    min-width: rem(290);
+    max-width: rem(290);
+    width: max-content;
+    height: auto;
+    align-self: stretch;
+    border-radius: rem(10);
+    background-color: $gray-black;
+    padding: rem(20) rem(20) rem(18);
+    display: flex;
+    gap: rem(10);
+    flex-shrink: 0;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    & .process-stack__card-img {
+      width: rem(30);
+      height: rem(30);
+    }
+    & .process-stack__card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    object-position: center;
+    //   TODO +++ object-fit: content; object position
+    }
+    & > p {
+      width: 100%;
+      color: $color-gray;
+      font-size: rem(14);
+      line-height: rem(20);
+      margin: 0;
+      & > .name {
+        color: $color-white;
+        font-size: rem(14);
+        line-height: rem(20);
+        font-weight: $bold;
+      }
+    }
+  }
+
+  &__item {
+    border-left: none;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+
+  &__tabs {
+    .tabs__item-link ._active-item {
+      color: $color-white;
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      margin-bottom: 0;
+    }
+  }
+}

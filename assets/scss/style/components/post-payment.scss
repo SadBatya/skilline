@@ -1,0 +1,112 @@
+// .post-payment {
+//   margin-top: rem(92);
+//   @include mediaMax($small-mobile-max-width) {
+//     padding: rem(30) rem(25) rem(40);
+//   }
+//   @include mediaMax($mobile-max-width) {
+//     padding: 0;
+//   }
+//   &__payment {
+//     font-size: rem(200);
+//     line-height: rem(100);
+//     font-weight: $bold;
+//     margin: 0;
+//     padding-left: rem(30);
+
+//     color: $color-white;
+//     @include mediaMax($small-tablet-max-width) {
+//       font-size: rem(150);
+//       padding: 0;
+//       line-height: rem(70);
+//       text-align: center;
+//     }
+
+//     @include mediaMax($small-mobile-max-width) {
+//       font-size: rem(170);
+//       line-height: rem(70);
+//     }
+//     @include mediaMax($tablet-max-width) {
+//       font-size: rem(100);
+//       line-height: rem(45);
+//     }
+//     @include mediaMax($mobile-max-width) {
+//       padding: 0 rem(15);
+//       font-size: rem(60);
+//       line-height: rem(35);
+//     }
+//   }
+
+//   &__pay-block {
+//     display: flex;
+//     padding: 0 rem(30);
+//     @include mediaMax($small-tablet-max-width) {
+//       padding: 0;
+//     }
+//     @include mediaMax($tablet-max-width) {
+//       padding: 0;
+//       flex-direction: column;
+//     }
+//     @include mediaMax($small-mobile-max-width) {
+//       flex-direction: flex;
+//       flex-direction: column;
+//     }
+//   }
+
+//   &__block-price {
+//     display: flex;
+//     flex-direction: column;
+
+//     width: 100%;
+//     border: rem(1) solid $color-black;
+//     padding: rem(30) rem(20);
+//     gap: rem(27);
+//     background-color: $color-white;
+//     @include mediaMax($small-tablet-max-width) {
+//       width: 100%;
+//     }
+//     @include mediaMax($tablet-max-width) {
+//       width: 100%;
+//     }
+//   }
+
+//   &__header {
+//     font-size: rem(20);
+//     line-height: rem(28);
+//     font-weight: $bold;
+//     margin: 0;
+//     color: $color-black;
+//     & > span {
+//       font-weight: 100;
+//     }
+//   }
+
+//   &__wrap-cost {
+//     margin-top: auto;
+//   }
+
+//   &__hourly-cost {
+//     text-transform: uppercase;
+//     font-size: rem(14);
+//     line-height: rem(20);
+//     letter-spacing: 0.1em;
+//     margin: 0;
+//   }
+
+//   &__price {
+//     font-size: rem(48);
+//     line-height: rem(56);
+//     font-weight: $bold;
+//     margin: 0;
+
+//     color: $color-black;
+//   }
+
+//   &__currency {
+//     font-family: "Roboto";
+//     font-size: rem(32);
+//     line-height: rem(56);
+//     font-weight: $bold;
+
+//     color: $color-black;
+//   }
+// }

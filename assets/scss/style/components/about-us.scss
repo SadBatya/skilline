@@ -1,0 +1,80 @@
+.supervisor {
+  display: flex;
+  max-width: rem(912);
+  width: 100%;
+
+  min-height: rem(711);
+  margin: 0 auto;
+  // TODO +++ убрать вставку картинки в html
+  // TODO +++ Удалить background-image ;
+
+  background-size: contain;
+  background-position: rem(90) center;
+  background-repeat: no-repeat;
+  @include mediaMax($tablet-max-width) {
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: rem(70);
+  }
+  @include mediaMax($mobile-max-width) {
+    background-size: cover;
+    margin-right: rem(70);
+  }
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include mediaMax($tablet-max-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 rem(20);
+      gap: rem(30);
+    }
+  }
+  &__block-left {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+  &__name {
+    font-size: rem(16);
+    line-height: rem(24);
+    font-weight: $bold;
+
+    color: $light-green;
+  }
+
+  &__position {
+    max-width: rem(210);
+    font-size: rem(14);
+    line-height: rem(20);
+    margin: 0;
+
+    color: $color-white;
+    @include mediaMax($tablet-max-width) {
+      max-width: 100%;
+    }
+  }
+
+  &__about-us {
+    font-size: rem(16);
+    line-height: rem(24);
+    max-width: rem(330);
+    // TODO +++ зачем float?  у тебя же раскидывается выше контейнеры space-between-ом
+    color: $color-white;
+    @include mediaMax($tablet-max-width) {
+      margin: 0;
+      // TODO +++ зачем float?
+      float: left;
+      max-width: 100%;
+    }
+  }
+}

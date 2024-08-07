@@ -1,0 +1,81 @@
+@use "sass:math";
+// width max screen
+$maxDesktopWidth: 2800px;
+$desktop-hd: 1920px;
+$desktop-max-width: 1440px;
+$desktop-small-width: 1200px;
+$small-tablet-max-width: 992px;
+$tablet-max-width: 769px;
+$mobile-menu-width: 550px;
+$mobile-max-width: 500px; // 500px
+$img-mobile-max-width: 680px;
+$img-mobile-max-width: 500px; // 500px
+
+//color
+$bk-white: #fff;
+$color-white: #f7f8fc;
+$color-black:  #0e0e10;
+//$color-green: #06ff02;
+$color-green: #33d35e;
+$color-gray: #55555c;
+$color-gray-gr: #5b5b60;
+$color-dark-gray: #49494d;
+$color-light-gray: #93939b;
+$border-light-color: #efeff2;
+$color-red: #fa2e4e;
+$light-green: #33d35e;
+$gray-black: #1b1b1f;
+$dark-gray: #343434;
+$border-gray: #707070;
+$color-metallic: #808ba3;
+$bk-dark-gray: #1b1b1f;
+
+// $bk-dark-gray: #1b1b1f; // the same color
+
+$light-gray: #e4e4e6;
+$whatsapp: #00E676;
+$telegram:#229ED9;
+$vkontakte: #0077FF;
+$bk-ava: #323238;
+$dark-black:#29292F;
+$dark-blue: #303653;
+
+$bg-slide: #191B1D;
+
+
+/* FONT WEIGHT */
+$regular: 400;
+$normal: 500;
+$semibold: 600;
+$bold: 700;
+$extraBold: 800;
+$black: 900;
+
+$fontFamily: "GothamPro", Arial, sans-serif;
+$fontFamily-2: "EuclidCircular", Arial, sans-serif;
+
+/* TRANSITION */
+$transition: .3s all;
+
+
+$bg-triangle: url(@/assets/img/svg-sprite/triangle.svg);
+
+$baseFontSize: 16px;
+$mediumFontSize: 20px;
+$capitalFontSize: 35px;
+
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return math.div($pixels, $context) * 1rem;
+}
+
+@import "./style/_mixin.scss";
+
+

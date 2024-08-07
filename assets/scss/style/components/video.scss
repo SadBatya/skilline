@@ -1,0 +1,141 @@
+.block-video {
+  display: none;
+  max-height: rem(450);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 rem(30);
+  &__video {
+    position: relative;
+    width: 100%;
+    max-height: rem(460);
+    height: 100%;
+    background-image: url("./img/poster.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    width: rem(80);
+    height: rem(80);
+    background-color: $color-black;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(10);
+    padding: rem(28);
+    transition: all 0.5s ease-in;
+    transform: translate(-50%, -50%);
+
+    & svg {
+      width: rem(24);
+      height: rem(24);
+      min-height: rem(24);
+    }
+
+    &:hover {
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      width: rem(130);
+      height: rem(130);
+
+      .block-video__btn-text-hover {
+        //
+
+        opacity: 1;
+      
+      }
+    }
+  }
+
+  &__btn-text-hover {
+    overflow: hidden;
+    opacity: 0;
+    font-size: rem(12);
+    line-height: rem(20);
+    color: $color-white;
+    text-transform: uppercase;
+    max-width: rem(65);
+    // transition: all 0.5s ease;
+      transition: all 0.2s ease 0.5s;
+  }
+
+  &__year-color {
+    display: flex;
+    flex-direction: column;
+    gap: rem(3);
+    position: absolute;
+    bottom: 0;
+    left: rem(30);
+    transform: translateY(rem(250));
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+    width: rem(180);
+    // background-image: url("./img/back-color.png");
+    // background-position: center;
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // &:hover {
+    //   .block-video__wrap-img {
+    //     display: block;
+    //   }
+    //   .block-video__description-color {
+    //     display: block;
+    //     transform: translateY(rem(50));
+    //   }
+    // }
+  }
+
+  &__year-color:hover {
+    transform: translateY(0);
+    // transition: all 0.5s ease;
+  }
+
+  &__wrap-img {
+    // display: none;
+    background-image: url("./img/merenga.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    width: 100%;
+    height: rem(130);
+  }
+
+  &__description-color {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    transition: all 0.5s ease;
+    padding: rem(20);
+    & p {
+      font-size: rem(12);
+      line-height: rem(20);
+      font-weight: $bold;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+    & a {
+      font-size: rem(14);
+      line-height: rem(20);
+      color: $color-light-gray;
+      font-weight: medium;
+      & svg {
+        width: rem(8);
+        height: rem(8);
+        stroke: $color-light-gray;
+        margin-left: rem(20);
+        transform: rotate(270deg);
+      }
+    }
+  }
+}

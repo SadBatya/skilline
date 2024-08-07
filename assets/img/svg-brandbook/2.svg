@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7204" data-name="Rectangle 7204" width="24" height="24" transform="translate(47 141)" fill="none" stroke="#55555c" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_547" data-name="Mask Group 547" transform="translate(-47 -141)" clip-path="url(#clip-path)">
+    <g id="Group_57324" data-name="Group 57324" transform="translate(49.099 142)">
+      <path id="Path_53023" data-name="Path 53023" d="M116.823,155.871H100.691l-.733-.733v-4.4l.733-.733h16.132l.733.733v4.4Z" transform="translate(-99.223 -150.005)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <path id="Path_53024" data-name="Path 53024" d="M100.691,163.876l-.733-.733v-4.4l.733-.733" transform="translate(-99.223 -152.14)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <path id="Path_53025" data-name="Path 53025" d="M122.958,158.01l.733.733v4.4l-.733.733" transform="translate(-105.358 -152.14)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <path id="Path_53026" data-name="Path 53026" d="M116.823,171.881H100.691l-.733-.733v-4.4l.733-.733h16.132l.733.733v4.4Z" transform="translate(-99.223 -154.275)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <line id="Line_1538" data-name="Line 1538" x2="1.467" transform="translate(4.401 2.201) rotate(90)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line id="Line_1539" data-name="Line 1539" x2="1.467" transform="translate(4.401 8.069) rotate(90)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line id="Line_1540" data-name="Line 1540" x2="1.467" transform="translate(4.401 13.938) rotate(90)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <path id="Path_53027" data-name="Path 53027" d="M108.083,166.317" transform="translate(-101.391 -154.356)" fill="rgba(0,0,0,0)" stroke="#55555c" stroke-width="1.5"/>
+      <line id="Line_1541" data-name="Line 1541" y2="4.394" transform="translate(9.534 17.606)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <line id="Line_1542" data-name="Line 1542" y1="0.001" x2="19.801" transform="translate(0 21.999)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

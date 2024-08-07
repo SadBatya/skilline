@@ -1,0 +1,99 @@
+.request-form {
+  padding: rem(100) rem(30) rem(100);
+  display: flex;
+  justify-content: space-between;
+  border-top: rem(1) solid $gray-black;
+  @include mediaMax($small-tablet-max-width) {
+    padding: rem(20) rem(30) rem(50);
+  }
+  @include mediaMax($tablet-max-width) {
+    display: block;
+    padding: rem(50) rem(20);
+  }
+  @include mediaMax($mobile-max-width) {
+    display: block;
+  }
+
+  &__block-form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(28);
+    @include mediaMax($small-tablet-max-width) {
+      width: calc(100% - #{rem(350)});
+    }
+    @include mediaMax($tablet-max-width) {
+      width: 100%;
+    }
+  }
+  // TODO +++ что за стили?
+
+  // TODO +++ почистить комменты
+  &__form-header {
+    font-size: rem(32);
+    line-height: rem(40);
+
+    font-weight: $bold;
+
+    color: $light-green;
+    @include mediaMax($tablet-max-width) {
+      text-align: left;
+    }
+  }
+
+  &__description-form {
+    max-width: rem(565);
+    width: 100%;
+    font-size: rem(20);
+    line-height: rem(28);
+
+    font-weight: $bold;
+    color: $color-gray;
+    @include mediaMax($tablet-max-width) {
+      text-align: left;
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  &__bt-form {
+    @include mediaMax($tablet-max-width) {
+      text-align: center;
+      margin-bottom: rem(50);
+    }
+  }
+
+  &__form {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__arrow-form {
+    padding-left: rem(15);
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    & .our-contacts__address {
+      max-width: rem(310);
+      text-align: right;
+
+      @include mediaMax($tablet-max-width) {
+        max-width: 100%;
+        text-align: left;
+      }
+    }
+    & .our-contacts__phone,
+    .our-contacts__mail {
+      font-size: rem(31);
+      line-height: rem(40);
+    }
+    @include mediaMax($tablet-max-width) {
+      margin: 0 auto;
+      gap: rem(30);
+      text-align: left;
+    }
+  }
+}

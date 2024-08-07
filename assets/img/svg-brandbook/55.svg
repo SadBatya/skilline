@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="24" viewBox="0 0 19.2 24">
+  <g  transform="translate(-949.8 -12074)">
+    <g  transform="translate(953 12080.399)">
+      <line  x2="3.2" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="12.798" transform="translate(0 3.2)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="12.798" transform="translate(0 6.4)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path  d="M427.984,492.213h1.6a1.6,1.6,0,0,0,1.6-1.6h0a1.6,1.6,0,0,1,1.6-1.6h0a1.6,1.6,0,0,1,1.6,1.6h0a1.6,1.6,0,0,0,1.6,1.6h0a1.6,1.6,0,0,0,1.6-1.6h0v-2.4" transform="translate(-425.586 -477.814)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g  transform="translate(949.8 12074)">
+      <g  transform="translate(-420.986 -467.214)" fill="none" stroke-miterlimit="10">
+        <path d="M440.186,491.214h-19.2v-24h12.8l6.4,6.4Z" stroke="none"/>
+        <path d="M 438.6862487792969 489.7137451171875 L 438.6862487792969 474.2350769042969 L 433.1648559570312 468.7137451171875 L 422.4862365722656 468.7137451171875 L 422.4862365722656 489.7137451171875 L 438.6862487792969 489.7137451171875 M 440.1862487792969 491.2137451171875 L 420.9862365722656 491.2137451171875 L 420.9862365722656 467.2137451171875 L 433.7861633300781 467.2137451171875 L 440.1862487792969 473.61376953125 L 440.1862487792969 491.2137451171875 Z" stroke="none" fill="#55555c"/>
+      </g>
+      <path  d="M436.986,467.214v5.136h5.136" transform="translate(-424.186 -465.95)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

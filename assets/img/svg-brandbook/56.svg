@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.5" height="25.5" viewBox="0 0 25.5 25.5">
+  <g  transform="translate(-759.25 -11780.25)">
+    <path  d="M508.275,483.682h.8a.83.83,0,0,1,.8.857v12a.829.829,0,0,1-.8.857h-6.4a.83.83,0,0,1-.8-.857v-12a.83.83,0,0,1,.8-.857h.85" transform="translate(274.124 11307.608)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  transform="translate(780 11801.572)" fill="none" stroke="#55555c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path  d="M495.611,490.524H482.675a.83.83,0,0,1-.8-.857V472.53a.83.83,0,0,1,.8-.857h22.4a.83.83,0,0,1,.8.857v7" transform="translate(278.125 11309.327)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x2="13.593" transform="translate(760 11796.424)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  y1="3.427" transform="translate(768.795 11799.851)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  x2="7.197" transform="translate(766.4 11803.279)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect  width="3.2" height="3.427" transform="translate(764.8 11785.291)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path  d="M494.876,478.683h9.6v6" transform="translate(275.524 11308.323)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line  y2="1.714" transform="translate(780 11794.717)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

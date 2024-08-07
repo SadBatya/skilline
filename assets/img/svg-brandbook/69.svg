@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="24" height="24" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-path)">
+    <g  transform="translate(0 2.396)">
+      <path  d="M369.549,356.232H353.975V344.22h15.564" transform="translate(-353.045 -344.22)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path  d="M357.988,344.719a3.513,3.513,0,0,1-3.513,3.514" transform="translate(-353.351 -344.032)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path  d="M357.988,348.233a3.513,3.513,0,0,0-3.513-3.514" transform="translate(-353.351 -336.462)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <circle  cx="2.25" cy="2.25" r="2.25" transform="translate(9.75 3.757)" fill="none" stroke="#55555c" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 15.01)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 12.01)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 9.01)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="16.504" transform="translate(0 18.013)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 18.012)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 6.007)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 3.007)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="16.504" transform="translate(0 15.011)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line  x2="6" transform="translate(18 0.003)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

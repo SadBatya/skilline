@@ -1,0 +1,33 @@
+.vacancies-detailed {
+  background-color: $color-white;
+
+  &__btn-back {
+    cursor: pointer;
+    padding: rem(30) rem(30) 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    gap: rem(7);
+    align-items: center;
+    & svg {
+      transform: rotate(180deg);
+      stroke: $color-gray;
+      width: rem(5);
+      height: rem(10);
+    }
+    & span {
+      font-size: rem(14);
+      line-height: rem(20);
+      color: $color-gray;
+      text-transform: uppercase;
+    }
+  }
+
+  &__btn-back:hover svg {
+    stroke: $color-black;
+  }
+
+  &__btn-back:hover span {
+    color: $color-black;
+  }
+}

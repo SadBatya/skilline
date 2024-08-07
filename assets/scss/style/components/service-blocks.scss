@@ -1,0 +1,207 @@
+.service-block {
+  background-color: $gray-black;
+  &:hover .service-block__btn-more {
+    color: $light-green;
+    stroke: $light-green;
+  }
+  // &:hover .service-block__title-card{
+  //   color: $light-green;
+  // }
+  & .service-block__line-arrow {
+    position: relative;
+    width: 0;
+    transform: translateY(0);
+  }
+
+  &:hover .service-block__line-arrow {
+    width: rem(30);
+    border: rem(0.5) solid $light-green;
+
+    transition: 0.5s;
+  }
+
+
+  &__line-arrow {
+    width: 0;
+  }
+
+  // TODO +++ нужно наведение на блок а не на псевдоссылку , и что "Подробнее" загоралось по наведению на блок
+  &__service-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__pattern {
+    width: 100%;
+    padding-bottom: 51.5%;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+
+    @include mediaMin($desktop-max-width) {
+      height: 12.5vw;
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      object-position: center;
+      object-fit: cover;
+    }
+
+    &-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .canvas-block {
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+      & canvas {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        transition: opacity 2s linear;
+
+        &.loaded {
+          opacity: 1;
+          background-color: $gray-black;
+        }
+      }
+    }
+  }
+
+  // TODO +++ высоту тоже нужно поставить
+  &__canvas3d {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+    padding: rem(30) rem(20);
+    height: 100%;
+  }
+
+  &__title-card {
+
+    font-size: rem(30);
+    line-height: rem(40);
+    font-weight: $bold;
+    color: $color-white;
+    margin: 0 0 rem(15);
+    max-height: rem(80);
+    height: rem(72);
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+      max-height: rem(48);
+    }
+  }
+
+  &__description-card {
+    margin: 0 0 rem(40);
+    font-size: rem(16);
+    line-height: rem(20);
+    font-weight: $regular;
+    color: $color-light-gray;
+  }
+
+  &__btn-more {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    color: $color-light-gray;
+    stroke: $color-light-gray;
+
+    &:hover {
+      color: $light-green;
+      stroke: $light-green;
+    }
+
+    & svg {
+      transform: rotate(270deg);
+    }
+  }
+
+  &__btn-text {
+    font-size: rem(14);
+    line-height: rem(20);
+    font-weight: $normal;
+    margin-right: rem(20);
+  }
+
+  &__wrap-btn {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      position: relative;
+      margin-left: rem(-4);
+      height: rem(5);
+    }
+  }
+
+  &._is-loading {
+    & .service-block {
+      &__pattern {
+        @include isLoading(0s, $color-gray, $color-gray-gr, $color-gray);
+      }
+
+      &__title-card {
+        & > span {
+          @include isLoading();
+          display: block;
+          gap: rem(10);
+          height: rem(30);
+          width: 60%;
+          opacity: 0.8;
+
+        }
+      }
+
+      &__description-card {
+        display: flex;
+        flex-direction: column;
+        gap: rem(4);
+        & > span {
+          @include isLoading();
+          opacity: 0.6;
+          height: rem(16);
+
+          &:last-child {
+            width: 30%;
+          }
+        }
+      }
+
+      &__btn-more {
+        @include isLoading();
+        height: rem(14);
+        width: rem(60);
+        opacity: 0.6;
+      }
+    }
+  }
+}

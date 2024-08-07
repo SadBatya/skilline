@@ -1,0 +1,77 @@
+
+.portfolio__tabs-wrapper {
+  @include flexbox(row, flex-start, flex-start);
+  margin-bottom: rem(20);
+  @include scrollbar();
+
+  @include mediaMax($tablet-max-width) {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+}
+
+.portfolio__tabs-container {
+  width: auto;
+  position: relative;
+  @include flexbox(row, flex-start, flex-start);
+}
+
+.portfolio__tab-btn {
+  @include button-reset();
+  position: relative;
+  color: var(--tabs-color-text);
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: rem(20);
+  padding: 0 rem(20) rem(12);
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 2;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: rem(2);
+    background: var(--tabs-color-default);
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &._active {
+    color: var(--tabs-color-active);
+
+    //&::before {
+    //  background: var(--tabs-color-active);
+    //}
+  }
+
+
+}
+
+
+.portfolio__tab-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  width: auto;
+  height: rem(2);
+
+
+  background-color: var(--tabs-color-active);
+
+  transition: transform 0.3s ease-in-out;
+}

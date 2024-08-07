@@ -1,0 +1,43 @@
+.support-consultation {
+  margin: rem(100) auto rem(54);
+  padding: rem(70) rem(71) rem(71) rem(50);
+  border: rem(15) solid $gray-black;
+  max-width: rem(920);
+  width: 100%;
+
+  background-image: url('./img/bk-support.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include mediaMax($tablet-max-width) {
+    background-position: right;
+  }
+
+  @include mediaMax($mobile-max-width) {
+    padding: rem(55) rem(35) rem(365);
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("./img/bk-smallSupport.png");
+  }
+
+  &__title {
+    font-size: rem(32);
+    line-height: rem(40);
+    font-weight: $bold;
+    margin: 0 0 rem(26);
+
+    color: $color-white;
+  }
+
+  &__description {
+    font-size: rem(16);
+    line-height: rem(24);
+    margin: 0 0 rem(44);
+    max-width: rem(427);
+    color: $color-white;
+  }
+
+  &__btn {
+    border-color: $light-green;
+  }
+}

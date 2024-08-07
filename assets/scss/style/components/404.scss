@@ -1,0 +1,46 @@
+.error-page {
+  max-width: rem(1440);
+  margin: 0 auto;
+  &__content {
+    padding: rem(100) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(50);
+    height: 100vh;
+    @include mediaMax($tablet-max-width) {
+        padding: rem(50) 0;
+        gap: rem(30);
+    }
+  }
+  &__title {
+    font-size: rem(200);
+    color: $color-white;
+    @include mediaMax($mobile-max-width) {
+     font-size: rem(150);
+    }
+
+    //@include safarifix() {
+    //  margin-bottom: rem(-22);
+    //  @include mediaMax($tablet-max-width) {
+    //    margin-bottom: rem(-16);
+    //  }
+    //}
+  }
+
+  &__subtitle {
+    font-size: rem(32);
+    line-height: rem(40);
+    color: $color-white;
+    @include mediaMax($mobile-max-width) {
+        font-size: rem(24);
+        line-height: rem(32);
+       }
+  }
+
+  .button-light {
+    align-self: center;
+    width: auto;
+  }
+}

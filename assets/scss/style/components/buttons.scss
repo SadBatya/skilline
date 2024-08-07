@@ -1,0 +1,124 @@
+
+
+.button-light,
+.button-dark {
+  font-family: "GothamPro", "arial", sans-serif;
+  max-width: rem(214);
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: rem(13) rem(15);
+  gap: rem(10);
+
+  font-size: rem(16);
+  line-height: rem(20);
+  font-weight: 500;
+  white-space: nowrap;
+
+  // margin-bottom: rem(10);
+
+  &._no-max {
+    max-width: none;
+
+  }
+
+  &__text {
+    font-family: "GothamPro", "arial", sans-serif;
+    font-size: rem(16);
+    line-height: rem(20);
+    // font: inherit;
+    color: inherit;
+  }
+
+  &__img {
+    max-width: rem(24);
+    max-height: rem(24);
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &.left-icon {
+    position: relative;
+
+    .button-light__img,
+    .button-dark__img {
+      position: absolute;
+      top: 50%;
+      right: rem(10);
+      transform: translateY(-50%);
+    }
+  }
+
+  &.icon-arrow {
+    .button-light__img,
+    .button-dark__img {
+      width: rem(7);
+      height: rem(12);
+    }
+  }
+}
+
+.button-light {
+  background-color: $color-white;
+  color: $color-black;
+  stroke: $color-black;
+  border: rem(1.5) solid $color-black;
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+    stroke: $color-white;
+    border: rem(1.5) solid $color-white;
+  }
+}
+
+.button-dark {
+  background-color: $color-black;
+  color: $color-white;
+  stroke: $color-white;
+  border: rem(1) solid $color-white;
+
+  &._transparent-bg {
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+      stroke: $color-black;
+    }
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+    stroke: $color-black;
+  }
+}
+
+.button-green {
+  cursor: pointer;
+  max-width: rem(214);
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+  width: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: $color-black;
+  color: $color-white;
+  stroke: $color-white;
+
+  &:hover {
+    background-color: $color-black;
+    border: none;
+    color: $color-green;
+    stroke: $color-green;
+  }
+}

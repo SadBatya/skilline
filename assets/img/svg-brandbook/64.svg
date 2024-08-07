@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="24" height="24" transform="translate(47 141)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g  transform="translate(-47 -141)" clip-path="url(#clip-path)">
+    <g  transform="translate(-496.499 -453.001)">
+      <rect  width="8.999" height="8.999" transform="translate(551 601.486)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      <g  transform="translate(548 598.485)">
+        <path  d="M549.5,602.229v-2.249h2.25" transform="translate(-549.501 -599.981)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path  d="M568.757,602.231v-2.25H566.5" transform="translate(-553.752 -599.981)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(548 611.235)">
+        <path  d="M549.5,616.991v2.249h2.25" transform="translate(-549.501 -616.984)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path  d="M568.757,616.982v2.256H566.5" transform="translate(-553.752 -616.982)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(543.499 603.048)">
+        <line  x1="5.25" transform="translate(0.002 2.938)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x1="5.252" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x1="5.252" transform="translate(0 5.906)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(562.25 603.048)">
+        <line  x2="5.249" transform="translate(0 2.938)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x2="5.249" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  x2="5.249" transform="translate(0 5.906)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(552.546 594.001)">
+        <line  y1="5.25" transform="translate(2.968 0.002)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  y1="5.252" transform="translate(5.906)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  y1="5.252" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g  transform="translate(552.546 612.751)">
+        <line  y2="5.249" transform="translate(2.968 0)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line y2="5.249" transform="translate(5.906 0)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line  y2="5.249" transform="translate(0 0)" fill="none" stroke="#55555c" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,209 @@
+
+html {
+  font-size: $baseFontSize;
+  -webkit-tap-highlight-color:  transparent;
+  height: 100%;
+
+  @include mediaMin($desktop-hd) {
+    font-size: calc(16/(1920/100) * 1vw);
+  }
+}
+
+body {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-family: "GothamPro", Arial, sans-serif;
+  color: #484d55;
+  background-color: $color-black;
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  &._lock {
+    overflow: hidden;
+  }
+
+  @include scrollBar(transparent, $light-green, rem(8));
+}
+
+.container {
+  // max-width: rem(1380);
+  margin: 0 auto;
+  padding: 0 rem(30);
+
+  @include mediaMax($tablet-max-width) {
+    padding: 0 rem(20);
+  }
+
+  @include mediaMax($mobile-max-width) {
+    //padding: 0;
+  }
+}
+
+.container-600 {
+  width: rem(600);
+  margin: rem(20) auto;
+}
+
+.container-924 {
+  width: rem(924);
+  margin: 0 auto;
+}
+
+
+a {
+  text-decoration: none;
+
+  &._hidden-link {
+    display: none;
+  }
+}
+
+.ui-wrapper {
+  margin-top: rem(100);
+}
+
+.dark-body {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  touch-action: none;
+  -webkit-overflow-scrolling: touch;
+
+  &._feedback {
+    z-index: 101;
+  }
+
+  &._message {
+    z-index: 109;
+  }
+}
+
+.page {
+  position: relative;
+  background-color: $color-black;
+}
+
+.page-video {
+  position: relative;
+
+}
+
+.page-main {
+  &._margin-section {
+    & > * {
+      margin-bottom: rem(100);
+
+      @include mediaMax($small-tablet-max-width) {
+        margin-bottom: rem(50);
+      }
+
+    }
+  }
+}
+
+
+.is-loading {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+.square-animation {
+  width: rem(240);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: rem(30);
+
+  & > span {
+    width: rem(50);
+    height: rem(50);
+    background-color: $color-green;
+    transform: scale(0);
+    animation: 3.2s square linear infinite;
+
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.9s;
+    }
+    &:nth-child(5) {
+      animation: 3s square-rotate 1.2s linear infinite;
+    }
+    &:nth-child(6) {
+      animation-delay: 1.5s;
+    }
+    &:nth-child(7) {
+      animation-delay: 1.8s;
+    }
+    &:nth-child(8) {
+      animation-delay: 2.1s;
+    }
+    &:nth-child(9) {
+      animation-delay: 2.4s;
+    }
+  }
+}
+
+@keyframes square {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes square-rotate {
+  0% {
+    transform: scale(0) rotate(0);
+  }
+
+  15% {
+    transform: scale(1) rotate(225deg);
+  }
+
+  30% {
+    transform: scale(0) rotate(360deg);
+  }
+
+  100% {
+    transform: scale(0) rotate(360deg);
+  }
+}
+
+.highcharts-credits {
+  display: none!important;
+}
+
+._green {
+  color: $color-green;
+}

@@ -1,0 +1,75 @@
+.metric {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(1);
+  @include mediaMax($desktop-small-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mediaMax($tablet-max-width) {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  &__card {
+    max-width: 100%;
+    padding: rem(25) rem(30) rem(30);
+    background-color: $gray-black;
+  }
+
+  &__quantity {
+    font-size: rem(100);
+    font-weight: $black;
+    line-height: rem(100);
+    color: $color-white;
+  }
+
+  &__signature {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+    color: $color-white;
+    margin-bottom: rem(28);
+  }
+
+  &__description {
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $color-white;
+    max-width: rem(400);
+    @include mediaMax($tablet-max-width) {
+      max-width: 100%;
+    }
+  }
+
+  &__wrap-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include  mediaMax($tablet-max-width) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: baseline;
+    gap: rem(7);
+  }
+
+  &__value {
+    font-size: rem(60);
+    line-height: rem(60);
+    font-weight: $black;
+    color: $color-white;
+  }
+
+  &__number {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+    color: $light-green;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

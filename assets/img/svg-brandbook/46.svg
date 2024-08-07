@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="24" viewBox="0 0 29 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect  width="29" height="24" transform="translate(47 141)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g  transform="translate(-47 -141)" clip-path="url(#clip-path)">
+    <g id="Users" transform="translate(47.55 141.5)">
+      <path  d="M19.057,25.787v3.8a.61.61,0,0,1-.61.61H1.06a.61.61,0,0,1-.61-.61v-3.8c0-3.051,4.156-5.547,9.288-5.547S19.057,22.724,19.057,25.787Z" transform="translate(0 -7.693)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <ellipse  cx="5.004" cy="4.961" rx="5.004" ry="4.961" transform="translate(4.765 0.5)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <path  d="M34.732,25.433A10.478,10.478,0,0,1,36.7,25.25c3.552,0,6.432,1.721,6.432,3.839v2.624a.4.4,0,0,1-.4.4H34.72" transform="translate(-16.356 -9.646)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+      <ellipse  cx="2.716" cy="2.692" rx="2.716" ry="2.692" transform="translate(18.125 7.5)" fill="none" stroke="#55555c" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

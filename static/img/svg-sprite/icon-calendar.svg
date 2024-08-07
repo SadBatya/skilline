@@ -1,0 +1,23 @@
+<svg id="Компонент_159_2" data-name="Компонент 159 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.001" height="30" viewBox="0 0 30.001 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_6450" data-name="Прямоугольник 6450" width="30.001" height="30" fill="none" stroke="#f7f8fc" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_53614" data-name="Сгруппировать 53614" clip-path="url(#clip-path)">
+    <circle id="Эллипс_1546" data-name="Эллипс 1546" cx="8.438" cy="8.438" r="8.438" transform="translate(12.188 12.188)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Контур_38845" data-name="Контур 38845" d="M9.438,25.5H1V3H29.126v7.5" transform="translate(-0.063 -0.187)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1401" data-name="Линия 1401" x2="11.24" transform="translate(0 29.062)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1402" data-name="Линия 1402" y2="5.624" transform="translate(24.376)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1403" data-name="Линия 1403" y2="5.624" transform="translate(18.126)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1404" data-name="Линия 1404" y2="5.624" transform="translate(11.876)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1405" data-name="Линия 1405" y2="5.624" transform="translate(5.626)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1406" data-name="Линия 1406" x2="1.875" transform="translate(4.688 16.874)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1407" data-name="Линия 1407" x2="1.875" transform="translate(4.688 20.624)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1408" data-name="Линия 1408" x2="1.875" transform="translate(4.688 13.124)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1409" data-name="Линия 1409" x2="1.875" transform="translate(8.44 9.374)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1410" data-name="Линия 1410" x2="1.875" transform="translate(8.44 13.124)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="Линия_1411" data-name="Линия 1411" x2="1.875" transform="translate(12.193 9.374)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Контур_38846" data-name="Контур 38846" d="M21,17v5.625h5.625" transform="translate(-1.312 -1.062)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

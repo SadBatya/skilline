@@ -1,0 +1,204 @@
+.payment {
+  padding: 0;
+  @include mediaMax($mobile-max-width) {
+    padding: rem(30) 0;
+  }
+  @include mediaMax($mobile-max-width) {
+    padding: 0;
+  }
+  &__wrap-title {
+    display: flex;
+    gap: rem(35);
+  }
+
+  &__hint {
+    cursor: pointer;
+    position: relative;
+    width: rem(16);
+    height: rem(16);
+    color: $color-white;
+
+
+    display: flex;
+
+    & svg {
+      width: 100%;
+      height: auto;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+  }
+
+  &__hint:hover {
+    color: $color-green;
+  }
+
+  &__hint:hover .payment__tooltip {
+    display: block;
+  }
+
+  &__tooltip {
+    display: none;
+    background-color: $color-white;
+    position: absolute;
+    bottom: calc(100% + #{rem(12)});
+    left: rem(8);
+    z-index: 5;
+
+    padding: rem(15) rem(10) rem(8);
+    width: rem(395);
+
+    @include mediaMax($desktop-small-width) {
+      left: auto;
+      right: rem(8);
+    }
+    @include mediaMax($mobile-max-width) {
+      width: rem(260);
+    }
+
+
+    & p {
+      margin: 0;
+      font-size: rem(14);
+      line-height: rem(20);
+      color: $color-black;
+    }
+
+    &::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      z-index: -2;
+      position: absolute;
+      border: rem(6) solid transparent;
+      border-bottom-color: $color-white;
+      transform: translate(-50%, 45%) rotate(315deg);
+
+      @include mediaMax($desktop-small-width) {
+        left: auto;
+        right: 0;
+
+        transform: translate(50%, 45%) rotate(45deg);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: rem(-12);
+      left: 0;
+      right: 0;
+      height: rem(12);
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    max-width: 100%;
+    @include mediaMax($small-tablet-max-width) {
+      padding: 0 0 0 rem(30);
+    }
+    @include mediaMax($tablet-max-width) {
+      padding: 0;
+    }
+  }
+
+  &__pay-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(2);
+    border-top: rem(2) solid $color-black;
+    position: relative;
+    z-index: 1;
+
+    &._four {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaMax($small-tablet-max-width) {
+      margin: 0 rem(-30);
+    }
+    @include mediaMax($tablet-max-width) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 rem(-20);
+    }
+  }
+
+  &__block-price {
+    display: flex;
+    flex-direction: column;
+    padding: rem(50) rem(30) rem(45);
+
+    background-color: $color-white;
+    @include mediaMax($tablet-max-width) {
+      padding: rem(30) rem(20) rem(25);
+    }
+  }
+
+  &__header {
+    font-size: rem(20);
+    line-height: rem(28);
+    font-weight: $bold;
+
+
+    color: $color-black;
+    & span {
+      font-weight: $regular;
+    }
+  }
+
+  &__description {
+    font-size: rem(16);
+    line-height: rem(24);
+    margin: 0;
+    padding-bottom: rem(20);
+
+    color: $color-black;
+
+    & a {
+      text-decoration: underline;
+      color: $light-green;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__inner-price {
+    display: flex;
+    flex-direction: column;
+    gap: rem(7);
+    margin-top: auto;
+  }
+
+  &__hourly-cost {
+    color: $color-black;
+    text-transform: uppercase;
+    font-size: rem(14);
+    line-height: rem(20);
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
+
+  &__price {
+    font-size: rem(48);
+    line-height: rem(56);
+    font-weight: $bold;
+    margin-bottom: 0;
+
+    color: $color-black;
+  }
+
+  &__currency {
+    display: inline-flex;
+    height: rem(28);
+
+    & img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.pattern {
+  min-height: rem(100);
+
+  @include mediaMax($desktop-small-width) {
+    min-height: rem(50);
+  }
+
+  @include mediaMax($tablet-max-width){
+    min-height: auto;
+
+  }
+}

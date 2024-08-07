@@ -1,0 +1,38 @@
+@mixin list-reset() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin margin-padding-reset() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin button-reset() {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+
+@mixin mediaMax($mediaWidth) {
+  @media only screen and (max-width: $mediaWidth - 1) {
+    @content;
+  }
+}
+
+
+@mixin mediaMin($mediaWidth) {
+  @media only screen and (min-width: $mediaWidth) {
+    @content;
+  }
+}
+
+@mixin mediaDistance($mediaWidthMin, $mediaWidthMax) {
+  @media only screen and (min-width: $mediaWidthMin) and (max-width: $mediaWidthMax - 1) {
+    @content;
+  }
+}
+
+

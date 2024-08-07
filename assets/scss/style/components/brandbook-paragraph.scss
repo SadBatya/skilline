@@ -1,0 +1,93 @@
+.paragraph {
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: rem(46);
+    padding: rem(100) rem(129);
+    background-color: $color-black;
+    @include mediaMax($desktop-max-width) {
+      padding: rem(100) rem(129);
+    }
+    @include mediaMax($desktop-small-width) {
+      padding: rem(100) rem(50);
+    }
+    @include mediaMax($small-tablet-max-width) {
+      padding: rem(100) rem(20);
+    }
+    @include mediaMax($mobile-max-width) {
+      padding: rem(50) rem(20);
+    }
+  }
+
+  &__title {
+    font-size: rem(60);
+    line-height: rem(70);
+    font-weight: $bold;
+    color: $color-white;
+    @include mediaMax($tablet-max-width) {
+      font-size: rem(32);
+      line-height: rem(40);
+    }
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(28);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    gap: rem(123);
+    @include mediaMax($desktop-small-width) {
+      gap: rem(80);
+      flex-wrap: wrap;
+    }
+    @include mediaMax($tablet-max-width) {
+      gap: rem(40);
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: rem(19);
+  }
+
+  &__description {
+    max-width: rem(300);
+    font-size: rem(16);
+    line-height: rem(24);
+    color: $color-white;
+  }
+
+
+
+  &__wrap-block-paragraph {
+    display: flex;
+    @include mediaMax($tablet-max-width) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__inner-values {
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+
+    & > img {
+      height: rem(18);
+    }
+  }
+
+  &__value {
+    font-size: rem(16);
+    line-height: rem(18);
+    font-weight: 500;
+    color: $color-white;
+    margin: 0;
+  }
+
+  ._first-value {
+    gap: rem(30);
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_6055" data-name="Прямоугольник 6055" width="18" height="18" transform="translate(-1 -1)" fill="none" stroke="none" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_51528" data-name="Сгруппировать 51528" transform="translate(1 1)" clip-path="url(#clip-path)">
+    <g id="Эллипс_1404" data-name="Эллипс 1404" fill="none" stroke="inherit" stroke-miterlimit="10" stroke-width="1.5">
+      <circle cx="8" cy="8" r="8" stroke="none" fill="none"/>
+      <circle cx="8" cy="8" r="7.25" fill="none"/>
+    </g>
+    <path d="M185.975,17.418V15.94h-2.956v1.478H184v4.433h-.978v1.478h2.956V21.851H185V17.418Z" transform="translate(-176.497 -11.514)" fill="inherit" stroke="none"/>
+  </g>
+</svg>

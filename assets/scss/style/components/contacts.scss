@@ -1,0 +1,9 @@
+.contacts {
+    padding: rem(30);
+    background-color: $color-white;
+
+    &__line  {
+        padding-top: rem(20);
+        border-top: rem(1) solid $border-light-color;
+    }
+}

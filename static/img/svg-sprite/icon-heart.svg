@@ -1,0 +1,25 @@
+<svg id="Компонент_158_2" data-name="Компонент 158 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.968" height="30" viewBox="0 0 30.968 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_6448" data-name="Прямоугольник 6448" width="30.968" height="30" fill="none" stroke="#f7f8fc" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_53611" data-name="Сгруппировать 53611">
+    <g id="Сгруппировать_53610" data-name="Сгруппировать 53610" clip-path="url(#clip-path)">
+      <path id="Контур_38843" data-name="Контур 38843" d="M26.6,18.527l4.244-4.849V7.872L27.939,4H26.083" transform="translate(-0.841 -0.129)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Контур_38844" data-name="Контур 38844" d="M13.7,4H3.9L1,7.872v5.805L14.547,29.162h1.938l2.728-3.118" transform="translate(-0.032 -0.129)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+  <line id="Линия_1393" data-name="Линия 1393" y2="1.935" transform="translate(19.355 5.807)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+  <g id="Сгруппировать_53613" data-name="Сгруппировать 53613">
+    <g id="Сгруппировать_53612" data-name="Сгруппировать 53612" clip-path="url(#clip-path)">
+      <line id="Линия_1394" data-name="Линия 1394" y2="1.935" transform="translate(19.355)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Линия_1395" data-name="Линия 1395" x2="1.935" transform="translate(21.29 3.871)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Линия_1396" data-name="Линия 1396" x1="1.935" transform="translate(15.484 3.871)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Линия_1397" data-name="Линия 1397" y2="1.935" transform="translate(22.26 24.205)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+  <line id="Линия_1398" data-name="Линия 1398" y2="1.935" transform="translate(22.26 18.398)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+  <line id="Линия_1399" data-name="Линия 1399" x2="1.935" transform="translate(24.195 22.27)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+  <line id="Линия_1400" data-name="Линия 1400" x1="1.935" transform="translate(18.389 22.27)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+</svg>

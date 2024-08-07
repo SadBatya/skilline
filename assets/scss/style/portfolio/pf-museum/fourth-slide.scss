@@ -1,0 +1,116 @@
+.fourth-slide {
+  display: flex;
+  background-color: #171717;
+  @include mediaMax($small-tablet-max-width) {
+    flex-direction: column;
+  }
+
+  &__left {
+    max-width: rem(790);
+    max-height: rem(790);
+    @include mediaMax($small-tablet-max-width) {
+      display: none;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__vertical-text {
+    max-width: rem(85);
+    width: 100%;
+    border: rem(1) solid var(--light-gray);
+    border-top: none;
+    border-bottom: none;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+    max-height: rem(790);
+    overflow: scroll;
+    padding: 0 rem(8);
+    display: flex;
+    gap: rem(30);
+    align-items: center;
+    @include mediaMax($small-tablet-max-width) {
+      writing-mode: horizontal-tb;
+      transform: scale(1);
+      max-width: 100%;
+      border-left: none;
+      border-right: none;
+      border-top: rem(1) solid var(--light-gray);
+      border-bottom: rem(1) solid var(--light-gray);
+      padding: rem(10) 0;
+    }
+  }
+
+  &__vert-text,
+  &__dot {
+    font-family: "Apparel-Bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: rem(5);
+    font-size: rem(50);
+    line-height: rem(60);
+    color: var(--light-gray);
+    @include mediaMax($small-tablet-max-width) {
+      font-size: rem(24);
+      line-height: rem(30);
+    }
+  }
+
+  &__rigth {
+    display: flex;
+    flex-direction: column;
+    gap: rem(130);
+    justify-content: space-between;
+    padding: rem(74) 0 rem(100) rem(60);
+    @include mediaMax($small-tablet-max-width) {
+      padding: rem(50) rem(20);
+      gap: rem(60);
+    }
+  }
+
+  &__description {
+    max-width: rem(780);
+    width: 100%;
+    font-size: rem(24);
+    line-height: rem(30);
+    color: var(--color-white);
+    font-family: "Apparel-Bold", sans-serif;
+    @include mediaMax($mobile-max-width) {
+      font-size: rem(20);
+      line-height: rem(26);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: rem(60);
+    @include mediaMax($small-tablet-max-width) {
+      align-items: end;
+    }
+    @include mediaMax($mobile-max-width) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: rem(20);
+    }
+  }
+
+  &__wrap-img {
+    max-width: rem(168);
+    max-height: rem(160);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    max-width: rem(550);
+    width: 100%;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: var(--color-white);
+    font-family: "GolosText", sans-serif;
+  }
+}

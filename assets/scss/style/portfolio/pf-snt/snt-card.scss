@@ -1,0 +1,94 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 47.23%;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top left;
+    box-shadow: 0 0 rem(20) rgba(48, 54, 83, 0.2);
+  }
+
+  &.first-card {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  &.center-card {
+    position: absolute;
+    top: 6%;
+    left: rem(20);
+    z-index: 1;
+
+    @include mediaMax($tablet-max-width) {
+      left: rem(15);
+    }
+  }
+  &.last-card {
+    position: absolute;
+    top: 12%;
+    left: rem(40);
+    z-index: 2;
+    @include mediaMax($tablet-max-width) {
+      left: rem(30);
+    }
+  }
+}
+
+@keyframes fslide {
+  0% {
+    position: absolute;
+    transform: translate(4% , 20%);
+    z-index: 3;
+  }
+  25% {
+
+  }
+  50% {
+    transform: translate(0% , 50%);
+    left: 0;
+    z-index: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: translate(0 , 0);
+    z-index: 0;
+  }
+}
+
+.pf-snt__cards {
+  margin: 0 auto;
+  max-width: rem(1000);
+
+  @include mediaMax($tablet-max-width) {
+    max-width: calc(100% - #{rem(60)});
+  }
+
+  &.animation {
+
+    & .card {
+      transition: all 0.5s linear;
+      position: absolute;
+    }
+    & .first-card {
+      animation-name: fslide;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+    }
+    & .center-card {
+
+    }
+    & .last-card {
+    }
+  }
+}

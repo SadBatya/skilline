@@ -1,0 +1,13 @@
+<svg id="Компонент_142_2" data-name="Компонент 142 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_6209" data-name="Прямоугольник 6209" width="30" height="30" fill="none" stroke="#f7f8fc" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_51703" data-name="Сгруппировать 51703">
+    <g id="Сгруппировать_51702" data-name="Сгруппировать 51702" clip-path="url(#clip-path)">
+      <path id="Контур_37415" data-name="Контур 37415" d="M15.879,1l4.439,7.921,8.807,1.454V12.25l-5.569,6.637,1.756,10.238H22.837l-7.791-4.079L7.288,29.125H4.812L6.569,18.887,1,12.25V10.375L9.807,8.921,14.125,1h1.754Z" transform="translate(-0.062 -0.063)" fill="none" stroke="#f7f8fc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+  <path id="Контур_37416" data-name="Контур 37416" d="M10.674,17.593l2.13,1.873,6.1-5.366" transform="translate(0.218 -0.881)" fill="none" stroke="#f7f8fc" stroke-miterlimit="10" stroke-width="1.5"/>
+</svg>
